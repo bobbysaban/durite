@@ -117,6 +117,12 @@ section .copy {
 	background-color: #d6d6d6;
 	float: right;}
 
+.mobile-nav, .mobile {
+	display: none;}
+
+.desktop {
+	display: block;}
+
 /* ---------- SIDENAV ---------- */
 
 .sidenav-container {
@@ -306,14 +312,83 @@ input[type="radio"], input[type="checkbox"] {
 #portfolio img {
 	display: block;
 	margin: auto;}
+	
+/* ---------- IPHONE ---------- */	
 @media only screen and (max-width: 1000px){ 
 
-.vertAlign {
-	top: initial;
-	transform: initial;
-    -ms-transform: initial;
-    -webkit-transform: initial;
-	}
+	/* ---------- GENERAL ---------- */
+
+	.sidenav-container, .desktop {
+		display: none;}
+	
+	.mobile {
+		display: block;}
+	
+	section > div {
+		margin-bottom: 50px;}
+		
+	.container {
+		padding: 0 25px;}
+
+	section .copy {
+		padding: 0;}
+	
+	.vertAlign {
+		top: initial;
+		transform: initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		}
+	/* ---------- HEADER ---------- */
+	
+	.logo, .hamburger {
+		top: 0;
+		margin: 25px;
+		position: fixed;}
+	
+	.mobile-nav .hamburger {
+		top: 0;
+		left: inherit;
+		right: 0;
+		margin: 25px;}
+
+	.mobile-nav {
+		display: block;
+		position: fixed;
+		height: 75px;
+		padding: 0;
+		margin: 0;}
+	
+	/* ---------- PRODUCT SLIDER ---------- */
+	
+	.bg-slide {
+		height: 150px;}
+		
+    .mobile-product-slider {
+    	width: 100%;}
+	
+	.slick-prev, .slick-next {
+		bottom: 75px;
+		z-index: 99;}
+	
+	.slick-prev {
+		left: -6%;}
+	
+	.slick-next {
+		right: -8% !important;
+		left: inherit;
+		}
+
+	.slick-list {
+		width: 97%;}	
+	
+	.slick-dots li {
+		width: 10px;}
+
+	/* ---------- PROCESS ---------- */
+		
+	#process .copy {
+		padding: 0;}
 
 
 

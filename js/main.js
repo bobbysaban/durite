@@ -38,6 +38,18 @@ $(document).ready(function () {
 	  cssEase: 'linear'
   	});
 
+	//product slider
+    $('.mobile-product-slider').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: false,
+	  speed: 300,
+	  autoplaySpeed: 100,
+	  swipe: true,
+	  dots: true,
+	  infinite: true,
+	  cssEase: 'linear'
+  	});
 
  	$('.product-slide').slickLightbox();
 
