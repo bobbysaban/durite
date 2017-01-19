@@ -328,7 +328,11 @@ input[type="radio"], input[type="checkbox"] {
 		margin-bottom: 50px;}
 		
 	.container {
-		padding: 0;}
+		padding: 0 0px;
+		width: 90%;
+		margin: 0 5%;
+		margin: auto 5%;
+		display: block;}
 
 	section .copy {
 		padding: 0;}
@@ -343,21 +347,24 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.logo, .hamburger {
 		top: 0;
-		margin: 25px;
-		position: fixed;}
+		margin: 12.5px 25px;}
 	
 	.mobile-nav .hamburger {
 		top: 0;
 		left: inherit;
 		right: 0;
-		margin: 25px;}
+		margin: 28px;}
 
 	.mobile-nav {
 		display: block;
 		position: fixed;
 		height: 75px;
 		padding: 0;
-		margin: 0;}
+		margin: 0;
+		z-index:99;}
+	
+	.hero {
+		width: inherit;}
 	
 	/* ---------- PRODUCT SLIDER ---------- */
 	
@@ -389,12 +396,6 @@ input[type="radio"], input[type="checkbox"] {
 		
 	#process .copy {
 		padding: 0;}
-
-
-
-
-
-
 
 
 
