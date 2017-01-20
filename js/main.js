@@ -1,30 +1,5 @@
 $(document).ready(function () {
-
-	new WOW().init();
-    
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-	
+	        		
 	//product slider
     $('.product-slider').slick({
 	  slidesToShow: 5,
@@ -40,7 +15,7 @@ $(document).ready(function () {
 
 	//product slider
     $('.mobile-product-slider').slick({
-	  slidesToShow: 1,
+	  slidesToShow: 2,
 	  slidesToScroll: 1,
 	  autoplay: false,
 	  speed: 300,
@@ -69,7 +44,7 @@ $(document).ready(function () {
   	
 	//slick slider
     $('.inquiry-slider').slick({
-	  slidesToShow: 1,
+	  slidesToShow: 4,
 	  slidesToScroll: 1,
 	  vertical: true,
 	  autoplay: false,
@@ -80,16 +55,43 @@ $(document).ready(function () {
 	  infinite: true,
 	  cssEase: 'linear'
   	});
+  	
+  	new WOW().init();
   
+});
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
 });
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.sidenav a').each(function () {
+    $('.nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.sidenav li a').removeClass("active");
+            $('ul.nav li a').removeClass("active");
             currLink.addClass("active");
         }
         else{
@@ -102,3 +104,6 @@ var hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function() {
 hamburger.classList.toggle("is-active");
 });
+
+
+

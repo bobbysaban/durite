@@ -1,0 +1,280 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title> Durite </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="file:///Users/Bobby/Desktop/durite-dev/css/animate.css">	
+	<link rel="stylesheet" href="file:///Users/Bobby/Desktop/durite-dev/css/hamburgers.min.css">	
+	<link rel="stylesheet" href="file:///Users/Bobby/Desktop/durite-dev/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="file:///Users/Bobby/Desktop/durite-dev/css/main.css">
+
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<style>
+
+form {
+    line-height: 2em;
+}
+p {
+    margin: 5px 0;
+}
+h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold
+}
+#result {
+    margin: 10px;
+    background: #eee;
+    padding: 10px;
+    height: 40px;
+    overflow: auto;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- nav -->
+<div class="nav-container wow fadeIn" style="padding:0;">
+	<div class="logo" style="padding:0;">
+		<a href="#"><img src="assets/logo.png" width="30" /></a>
+	</div>   
+
+	<ul class="inquiry-sidenav">
+
+		<li> <a href="#one" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#two" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#three" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#four" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#five" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#six" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#seven" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#eight" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#nine" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#ten" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#eleven" class="dot"> &nbsp; </a></li> 
+		<li> <a href="#twelve" class="dot"> &nbsp; </a></li> 
+	</ul>
+	
+	<button class="hamburger hamburger--squeeze" type="button">
+	  <span class="hamburger-box">
+		<span class="hamburger-inner"></span>
+	  </span>
+	</button>
+</div>
+
+
+<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 
+	<form id="inquiry" action="" method="post">
+
+		<div class="form-field" id="one">
+			<div class="vertAlign">
+				<label for="what-are-you-designing?">What are you designing?</label><br>
+				<h4> Select all that apply </h4>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-left:0; padding-top: 25px;">
+					<input type="radio" name="product-countertop" value="Countertop"> <h3> Countertop </h3> <br>
+					<input type="radio" name="product-vanity-top" value="Vanity Top"> <h3> Vanity Top </h3><br>
+					<input type="radio" name="product-bathroom-fixtures" value="Bathroom Fixtures" > <h3> Bathroom Fixtures </h3><br>
+					<input type="radio" name="product=treaders-risers" value="Stair Treaders & Risers"> <h3> Stair Treaders & Risers </h3><br>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-left:0; padding-top: 25px;">			
+					<input type="radio" name="product-wall-column-bases" value="Wall & Column Bases"> <h3> Wall & Column Bases </h3><br>
+					<input type="radio" name="product-wall-wainscott" value="Wall & Wainscott"> <h3> Wall & Wainscott </h3><br>
+					<input type="radio" name="product-precast" value="Precast"> <h3> Precast </h3><br>
+					<input type="radio" name="product-waterjet" value="Waterjet"> <h3> Waterjet </h3><br>  		
+				</div>
+			</div>
+		</div>
+  
+		<div class="form-field" id="two">
+			<div class="vertAlign">
+				<label for="material">What material are you trying to match? </label><br>
+				<input name="material" id="yourName" type="text" value="" size="40" aria-required="true" placeholder="materials">
+			</div>
+		</div>
+			
+		<div class="form-field" id="three">
+			<div class="vertAlign">
+				<label for="upload">Do you have designs for the Plan View and Cross Sections?</label><br>
+				<input type="file" name="pic" accept="image/*">
+			</div>
+		</div>
+	
+		<div class="form-field" id="four">
+			<div class="vertAlign">
+				<label for="size-variations"> How many size variations do you need?</label><br>
+				<textarea name="description" id="description" rows="1" cols="40" aria-required="true"></textarea>
+			</div>
+		</div>
+	
+		<div class="form-field" id="five">
+			<div class="vertAlign">
+				<label for="prototype">Do you require a prototype before production?</label><br>
+				<input type="radio" name="prototype-yes" value="yes"> Yes <br>
+				<input type="radio" name="prototype-no" value="no"> No<br>  
+			</div>
+		</div>
+		
+		<div class="form-field" id="six">
+			<div class="vertAlign">
+				<label for="project-timeline">Project Timeline:</label><br>
+				<input name="timeline" id="timeline" type="date" value="2011-01-13"/>
+				<input name="timeline" id="timeline" type="date" value="2011-01-13"/>
+			</div>
+		</div>
+		
+		<div class="form-field" id="seven">
+			<div class="vertAlign">
+				<label for="crate-and-transport">What is needed for crate and transport?</label><br>
+				<input name="ct" id="ct" type="text" value="" size="40" aria-required="true">
+			</div>
+		</div>
+	
+		<div class="form-field" id="eight">
+			<div class="vertAlign">
+				<label for="production-schedule">Do you require at one time? As production is advancing?</label><br>
+				<input type="radio" name="all-at-once" value="yes"> All at once <br>
+				<input type="radio" name="as-production-advances" value="no"> As production advances<br>    
+			</div>
+		</div>
+  
+		<div class="form-field" id="nine">
+			<div class="vertAlign">
+				<label for="insurance">Do you require insurance?</label><br>
+				<input type="radio" name="prototype-yes" value="yes"> Yes <br>
+				<input type="radio" name="prototype-no" value="no"> No<br>  
+			</div>
+		</div>
+		
+		<div class="form-field" id="ten">
+			<div class="vertAlign">
+				<label for="inspection">Inspection prior to FOB and Payment?</label><br>
+				<input type="radio" name="prototype-yes" value="yes"> Yes <br>
+				<input type="radio" name="prototype-no" value="no"> No<br>    
+			</div>
+		</div>	
+		
+		<div class="form-field" id="eleven">
+			<div class="vertAlign">
+				<label for="payment">How will you be paying for this contract?</label><br>
+				<select name="payment">
+					<option value="option-1">option 1</option>
+					<option value="option-2">option 2</option>
+					<option value="option-3">option 3</option>
+					<option value="option-4">option 4</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-field" id="twelve">
+			<div class="vertAlign">
+				<label for="loc-capability">Do you have an LOC capability?</label><br>
+				<input type="radio" name="prototype-yes" value="yes"> Yes <br>
+				<input type="radio" name="prototype-no" value="no"> No<br>    
+			</div>
+		</div>
+		 
+		<p><input type="submit" /></p>
+	</form>
+	
+	<h2>JSON</h2>
+	
+	<pre id="result"></pre>
+ 
+</div>   
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+
+	<script>
+	
+		$.fn.serializeObject = function()
+		{
+			var o = {};
+			var a = this.serializeArray();
+			$.each(a, function() {
+				if (o[this.name] !== undefined) {
+					if (!o[this.name].push) {
+						o[this.name] = [o[this.name]];
+					}
+					o[this.name].push(this.value || '');
+				} else {
+					o[this.name] = this.value || '';
+				}
+			});
+			return o;
+		};
+
+		$(function() {
+			$('form').submit(function() {
+				$('#result').text(JSON.stringify($('form').serializeObject()));
+				return false;
+			});
+		});
+	
+	
+	var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function() {
+	hamburger.classList.toggle("is-active");
+	});	
+
+		$(document).ready(function () {
+			$(document).on("scroll", onScroll);
+	
+			//smoothscroll
+			$('a[href^="#"]').on('click', function (e) {
+				e.preventDefault();
+				$(document).off("scroll");
+		
+				$('a').each(function () {
+					$(this).removeClass('active');
+				})
+				$(this).addClass('active');
+	  
+				var target = this.hash,
+					menu = target;
+				$target = $(target);
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top+2
+				}, 500, 'swing', function () {
+					window.location.hash = target;
+					$(document).on("scroll", onScroll);
+				});
+			});
+		});
+
+		function onScroll(event){
+			var scrollPos = $(document).scrollTop();
+			$('.inquiry-sidenav a').each(function () {
+				var currLink = $(this);
+				var refElement = $(currLink.attr("href"));
+				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+					$('ul.inquiry-sidenav li a').removeClass("active-dot");
+					currLink.addClass("active-dot");
+				}
+				else{
+					currLink.removeClass("active-dot");
+				}
+			});
+		}
+
+	</script>
+
+</body>
+</html>

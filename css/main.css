@@ -45,10 +45,9 @@ p {
 .copy p {
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 40px;
 	}
 
-ul.sidenav li a {
+ul.nav li a {
 	font-weight: 300;
     color: rgba(74, 74, 74, 1);
     letter-spacing: 1px;}
@@ -112,7 +111,6 @@ section .copy {
 	padding-left: 50px;}
 
 .hero {
-	width:750px;
 	height: 475px;
 	background-color: #d6d6d6;
 	float: right;}
@@ -123,9 +121,9 @@ section .copy {
 .desktop {
 	display: block;}
 
-/* ---------- SIDENAV ---------- */
+/* ---------- nav ---------- */
 
-.sidenav-container {
+.nav-container {
 	height: 100vh;
 	width: 100px;
 	position: fixed;
@@ -139,29 +137,36 @@ section .copy {
 	float: left;
 	margin-right: 35px;}
 	
-ul.sidenav {
+ul.nav, ul.inquiry-sidenav {
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     top: 50%;
     position: fixed;
     list-style-type: none;
-    left: 42px;
+    left: 28px;
     padding: 0;
     }
 
+ul.inquiry-sidenav {
+	left: 45px;}
+
 .vertical-line {
-    height: 50px;
-    border-right: 1px solid #D7D7D7;
+	border-right: 1px solid #D7D7D7;
     width: 8px;
     display: block;
-    margin: 12px 0;}
+    margin: 12px;
+}
 
-ul.sidenav li {
-	writing-mode: vertical-lr;
-	font-size: 14px;}
+.nav > li > a:hover, .nav > li > a:focus {
+	background: none !important;}
+
+ul.nav li {
+    writing-mode: vertical-RL;
+    font-size: 14px;
+    line-height: 14px;}
 	
-ul.sidenav hr {
+ul.nav hr {
 	margin: 10px 12.5px;
     width: 50px;}
 
@@ -231,7 +236,7 @@ ul.sidenav hr {
 form {
 	margin-top: 150px;}
 
-ul.inquiry-sidenav {
+ul.inquiry-nav {
 	transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -250,23 +255,22 @@ ul.inquiry-sidenav {
 	display: block;
 }	
 
-.active-dot {
+.active-dot, .dot:active  {
 	background-color: #F66012 !important;
 	display: block;
 }
 
-/* 
 label {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 48px;
+	margin-bottom: 15px;
 }
- */
 
 form {
     line-height: 150% !important;
 }
 
+input, textarea {
+	padding: 10px;}
+	
 input[type="radio"], input[type="checkbox"] {
     margin: 0px 6px -1px;
     box-shadow: none;
@@ -283,7 +287,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .form-field {
-	height: 100vh;
+	padding: 100px 0;
     display: block;
     position: relative;
     width: 100%;
@@ -312,13 +316,17 @@ input[type="radio"], input[type="checkbox"] {
 #portfolio img {
 	display: block;
 	margin: auto;}
+
+/* ---------- FORM ---------- */
+
+
 	
 /* ---------- IPHONE ---------- */	
-@media only screen and (max-width: 1000px){ 
+@media only screen and (max-width: 700px){ 
 
 	/* ---------- GENERAL ---------- */
 
-	.sidenav-container, .desktop {
+	.desktop {
 		display: none;}
 	
 	.mobile {
@@ -329,10 +337,10 @@ input[type="radio"], input[type="checkbox"] {
 		
 	.container {
 		padding: 0 0px;
-		width: 90%;
-		margin: 0 5%;
-		margin: auto 5%;
-		display: block;}
+		width: 85%;
+		margin: auto 7.5%;
+		display: block;
+		z-index: 1;}
 
 	section .copy {
 		padding: 0;}
@@ -343,17 +351,29 @@ input[type="radio"], input[type="checkbox"] {
 		-ms-transform: initial;
 		-webkit-transform: initial;
 		}
+		
+	/* ---------- TYPOGRAPHY ---------- */
+	
+	.copy p {
+		margin-bottom: 0;
+	}
+
+	h1, label {
+		font-size: 26px;
+		line-height: 36px;}
+
 	/* ---------- HEADER ---------- */
 	
 	.logo, .hamburger {
 		top: 0;
 		margin: 12.5px 25px;}
 	
-	.mobile-nav .hamburger {
+	.hamburger {
 		top: 0;
 		left: inherit;
 		right: 0;
-		margin: 28px;}
+		margin: 28px;
+		z-index: 9999;}
 
 	.mobile-nav {
 		display: block;
@@ -363,8 +383,18 @@ input[type="radio"], input[type="checkbox"] {
 		margin: 0;
 		z-index:99;}
 	
+	.nav-container {
+		height: 70px;
+		border: none;
+		width: 100%;
+		background: white;
+	}
+	
 	.hero {
-		width: inherit;}
+		height: 33vh;}
+	
+	.intro {
+		padding: 0;}
 	
 	/* ---------- PRODUCT SLIDER ---------- */
 	
@@ -379,10 +409,10 @@ input[type="radio"], input[type="checkbox"] {
 		z-index: 99;}
 	
 	.slick-prev {
-		left: -6%;}
+		left: 0;}
 	
 	.slick-next {
-		right: -8% !important;
+		right: 0% !important;
 		left: inherit;
 		}
 
@@ -397,6 +427,25 @@ input[type="radio"], input[type="checkbox"] {
 	#process .copy {
 		padding: 0;}
 
+	.process-slide .bg-slide {
+		height: 200px;}
+	
+	#process p {
+		padding-left: 0;}
+	
+	.process-wrapper > div {
+		margin-bottom: 25px;}
+	
+	.process-wrapper > div:nth-child(even) {
+		margin-bottom: 50px;}
+
+	/* ---------- PROJECTS BRANDS ---------- */
+	
+	.brands .col-xs-4 {
+    	min-height: 75px;}
+    	
+	.brands img {
+		width: 100%;}
 
 
 }
