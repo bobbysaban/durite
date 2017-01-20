@@ -158,8 +158,10 @@ ul.inquiry-sidenav {
     margin: 12px;
 }
 
+/* 
 .nav > li > a:hover, .nav > li > a:focus {
 	background: none !important;}
+ */
 
 ul.nav li {
     writing-mode: vertical-RL;
