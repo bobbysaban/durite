@@ -37,6 +37,8 @@
     left: -50%;
     bottom: -60px;
     opacity: .25;
+    z-index: 100;
+
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -76,7 +78,8 @@
 
 .slick-prev
 {
-    left: 0%;
+    left: 5px;
+    
 }
 [dir='rtl'] .slick-prev
 {
@@ -119,9 +122,9 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -50px;
-    left: 5%;
-
+    bottom: -55px;
+    left:50px;
+	z-index: 100;
     display: block;
 
     width: auto;

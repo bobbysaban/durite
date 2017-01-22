@@ -1,5 +1,12 @@
 $(document).ready(function () {
-	        		
+
+    $('.hamburger').on('click', function() {
+        $('.hamburger-nav').fadeToggle();
+//          $('ul.nav').fadeToggle();
+         $('.overlay').fadeToggle();
+
+    });
+    	        		
 	//product slider
     $('.product-slider').slick({
 	  slidesToShow: 5,
@@ -90,7 +97,8 @@ function onScroll(event){
     $('.nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        
+        if (refElement.position().top < scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('ul.nav li a').removeClass("active");
             currLink.addClass("active");
         }

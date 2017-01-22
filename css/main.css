@@ -1,6 +1,6 @@
 /* ---------- TYPOGRAPHY ---------- */
 
-h1, label {
+h1, label, ul {
     font-size: 30px;
     line-height: 44px;
     font-weight: 300;
@@ -16,7 +16,7 @@ h2 {
 	color: rgba(0, 0, 0, .5);
 	}
 	
-h3 {
+h3, li {
     font-weight: 300;
     color: #4A4A4A;
     margin: 0;
@@ -37,14 +37,14 @@ p {
 	font-size: 14px;
 	line-height: 22px;
 	font-weight: 300;
-	color: rgba(0, 0, 0, .95);
+	color: rgba(0, 0, 0, .5);
 	}
 
 .copy h1 {}
 	
 .copy p {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 28px;
 	}
 
 ul.nav li a {
@@ -74,9 +74,13 @@ a:hover {
 	transition: opacity 0.25s linear;}
  
 .cta a {
-	color: #f8884d;
-    font-weight: 500;
+	color: #f8884d !important;
+    font-weight: 500 !important;
     cursor: pointer;}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background: none !important;}
+    
 /*---------- LAYOUT ---------- */
 
 body {
@@ -85,12 +89,17 @@ body {
 
 section {
 	display: inline-block;
-	}
+	padding-top: 33vh !important;}
 
 
 section > div {
 	margin-bottom: 200px;}
 
+section > div:last-child {
+	margin-bottom: 0px;}
+	
+section:last-child {
+	margin-bottom: 100px !important;}
 
 .vertAlign {
     transform: translateY(-50%);
@@ -100,12 +109,12 @@ section > div {
     position: relative;}
 
 .container {
-	padding: 100px 100px 0 200px;
+	padding: 0px 100px 0 200px;
 	float: left;
-	z-index: 98;}
+	}
 
 .intro {
-	margin-top: 100px;}
+	padding-top: 250px;}
 	
 section .copy {
 	padding-left: 50px;}
@@ -127,8 +136,7 @@ section .copy {
 	height: 100vh;
 	width: 100px;
 	position: fixed;
-/* 	border-right: 1px solid #f1f1f1; */
-	z-index: 99;}
+	z-index: 97;}
 
 .logo {
 	margin: 30px;}	
@@ -158,11 +166,6 @@ ul.inquiry-sidenav {
     margin: 12px;
 }
 
-/* 
-.nav > li > a:hover, .nav > li > a:focus {
-	background: none !important;}
- */
-
 ul.nav li {
     writing-mode: vertical-RL;
     font-size: 14px;
@@ -174,6 +177,7 @@ ul.nav hr {
 
 .active {
 	color: #F66012 !important;
+	font-weight: 500 !important;
 	}
 
 .hamburger{
@@ -182,7 +186,8 @@ ul.nav hr {
     position: fixed;
     top: 37.5px;
     right: 37.5px;
-    height: 18px;}
+    height: 18px;
+    z-index: 100;}
 
 .hamburger-box {
     width: 25px;
@@ -200,6 +205,56 @@ ul.nav hr {
     top: -8px;
 }
 
+/* ---------- HAMBURGER NAV---------- */
+
+.hamburger-nav {
+	display: none;
+    height: 100vh;
+    background-color: white;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0 80px;
+}
+
+.hamburger-nav h1, .hamburger-nav ul { 
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 48px;
+    color: black;
+    opacity: 1;
+    margin: 18px 0;
+    list-style-type: none;
+    padding-left: 0;
+    }
+
+    
+.hamburger-nav ul {
+	margin: 24px 0;
+	} 
+
+.hamburger-nav li {
+	line-height: 26px;
+	} 
+
+.hamburger-nav li a {
+	color: #9B9B9B;}
+		
+.hamburger-nav a {
+	color: rgba(74, 74, 74, 1);}
+
+.hamburger-nav .cta a {
+	font-weight: 600 !important;}
+	
+
+.overlay {
+	height: 100vh;
+	background-color: rgba(74, 74, 74, .75);
+	display: none;
+	z-index: 97;
+	position: fixed;
+ }
 /* ---------- SECTION Products---------- */
 
 .product{
@@ -301,11 +356,13 @@ input[type="radio"], input[type="checkbox"] {
 	padding-left: 100px;}
 
 #process p {
-	padding-left: 100px;}
+	margin-top: 16px;}
+
 	
 .process-slide .bg-slide {
 	height: 420px;
-	background-color: #d6d6d6;}
+	background-color: #d6d6d6;
+	}
 
 /* ---------- PROJECTS ---------- */
 
@@ -333,6 +390,9 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.mobile {
 		display: block;}
+		
+	section {
+		padding: 50px 0 !important;}
 	
 	section > div {
 		margin-bottom: 50px;}
@@ -354,6 +414,13 @@ input[type="radio"], input[type="checkbox"] {
 		-webkit-transform: initial;
 		}
 		
+	.hamburger-nav .vertAlign {
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		top: 50%;
+		position: relative;
+		}
 	/* ---------- TYPOGRAPHY ---------- */
 	
 	.copy p {
