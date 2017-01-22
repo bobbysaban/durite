@@ -392,10 +392,14 @@ input[type="radio"], input[type="checkbox"] {
 		display: block;}
 		
 	section {
-		padding: 50px 0 !important;}
+		padding: 25px 0 !important;}
 	
 	section > div {
-		margin-bottom: 50px;}
+		margin-bottom: 100px;}
+	
+	section > div:last-child {
+		margin-bottom: 25px;
+	}
 		
 	.container {
 		padding: 0 0px;
@@ -432,10 +436,16 @@ input[type="radio"], input[type="checkbox"] {
 		line-height: 36px;}
 
 	/* ---------- HEADER ---------- */
-	
+
 	.logo, .hamburger {
 		top: 0;
-		margin: 12.5px 25px;}
+    	margin: 16.5px 25px;}
+    
+    .logo a img {
+		float: left;
+		margin-right: 35px;
+		width: 25px !important;
+	}
 	
 	.hamburger {
 		top: 0;
@@ -463,12 +473,20 @@ input[type="radio"], input[type="checkbox"] {
 		height: 33vh;}
 	
 	.intro {
-		padding: 0;}
+		padding-top: 22vh !important;}
+
+	/* ---------- HAMBURGER NAV ---------- */
+		
+	.hamburger-nav {
+		padding: 0 50px;
+	}
+	
+	.hamburger-nav h1, .hamburger-nav ul {
+		text-align: right;
+	}
 	
 	/* ---------- PRODUCT SLIDER ---------- */
-	
-	.bg-slide {
-		height: 150px;}
+
 		
     .mobile-product-slider {
     	width: 100%;}
@@ -490,6 +508,26 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.slick-dots li {
 		width: 10px;}
+		
+	.product {
+		outline: none;
+		width: 50%;
+		float: left;
+	}
+	
+	.product:nth-child(odd){
+		padding: 5px 10px 0 0; }
+	
+	.product:nth-child(even){
+		padding: 5px 0 0 10px; }
+		
+	.bg-slide {
+		height: 150px;
+		margin-bottom: 16px;
+	}
+	
+	.product h3 {	
+		text-align: center;}
 
 	/* ---------- PROCESS ---------- */
 		
