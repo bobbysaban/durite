@@ -2,15 +2,14 @@ $(document).ready(function () {
 
     $('.hamburger').on('click', function() {
         $('.hamburger-nav').fadeToggle();
-//          $('ul.nav').fadeToggle();
-         $('.overlay').fadeToggle();
+        $('.overlay').fadeToggle();
 
     });
     	        		
 	//product slider
     $('.product-slider').slick({
-	  slidesToShow: 5,
-	  slidesToScroll: 5,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
 	  autoplay: false,
 	  speed: 300,
 	  autoplaySpeed: 100,
@@ -63,8 +62,18 @@ $(document).ready(function () {
 	  cssEase: 'linear'
   	});
   	
-  	new WOW().init();
-  
+	wow = new WOW(
+		{
+		boxClass:     'wow',       
+		animateClass: 'animated',  
+		offset:       100,           
+		mobile:       true,     
+		live:         true        
+		}
+	)
+	
+	wow.init();
+
 });
 
 $(document).ready(function () {

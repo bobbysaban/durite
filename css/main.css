@@ -43,8 +43,8 @@ p {
 .copy h1 {}
 	
 .copy p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
 	}
 
 ul.nav li a {
@@ -78,6 +78,23 @@ a:hover {
     font-weight: 500 !important;
     cursor: pointer;}
 
+.btn {
+	margin-top: 50px;
+    font-size: 20px;
+    width: 20%;
+    border: 2px solid #f66012;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0;}
+
+.inquiry-wrapper a{
+	color: #f66012;}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #f66012;
+    text-decoration: none;
+}
+    
 .nav > li > a:hover, .nav > li > a:focus {
 	background: none !important;}
     
@@ -93,7 +110,7 @@ section {
 
 
 section > div {
-	margin-bottom: 200px;}
+	margin-bottom: 27vh;}
 
 section > div:last-child {
 	margin-bottom: 0px;}
@@ -115,6 +132,9 @@ section:last-child {
 
 .intro {
 	padding-top: 250px;}
+
+.inquiry-wrapper .intro {
+	padding-top: 200px;}
 	
 section .copy {
 	padding-left: 50px;}
@@ -259,6 +279,7 @@ ul.nav hr {
  }
 /* ---------- SECTION Products---------- */
 
+.mobile-product  {display: none;}
 .product{
 	padding: 10px;
 	outline: none;}
@@ -273,7 +294,7 @@ ul.nav hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #d6d6d6;
-    height: 250px;
+    height: 40vh;
     padding: 0;}
 
 .product-slider h3 {
@@ -292,8 +313,6 @@ ul.nav hr {
 
 /* ---------- FORM ---------- */
 
-form {
-	margin-top: 150px;}
 
 ul.inquiry-nav {
 	transform: translateY(-50%);
@@ -346,7 +365,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .form-field {
-	padding: 100px 0;
+	padding-top: 40vh !important;
     display: block;
     position: relative;
     width: 100%;
@@ -362,7 +381,7 @@ input[type="radio"], input[type="checkbox"] {
 
 	
 .process-slide .bg-slide {
-	height: 420px;
+	height: 50vh;
 	background-color: #d6d6d6;
 	}
 
@@ -378,10 +397,23 @@ input[type="radio"], input[type="checkbox"] {
 	display: block;
 	margin: auto;}
 
-/* ---------- FORM ---------- */
+/* ---------- 950px ---------- */
+
+@media only screen and (max-width: 950px){ 
 
 
+.product-slider {
+	display: none !important;}
 	
+.mobile-product {
+	display: block !important;}
+	
+.bg-slide  {
+    height: 30vh;}
+    
+    
+}	
+
 /* ---------- IPHONE ---------- */	
 @media only screen and (max-width: 700px){ 
 
@@ -413,7 +445,7 @@ input[type="radio"], input[type="checkbox"] {
 	section .copy {
 		padding: 0;}
 	
-	.vertAlign {
+	.vertAlign, ul.inquiry-sidenav {
 		top: initial;
 		transform: initial;
 		-ms-transform: initial;
@@ -555,6 +587,30 @@ input[type="radio"], input[type="checkbox"] {
     	
 	.brands img {
 		width: 100%;}
+
+	/* ---------- INQUIRY FORM ---------- */
+		
+	ul.inquiry-sidenav {
+		left: 45px;
+		bottom: 3%;
+		/* top: 0; */
+		background: white;
+		height: 50px;
+		width: 74%;
+		padding: 0;
+		left: 0;
+		margin: auto;
+		display: block;
+		left: 0;
+		right: 0;
+	}
+	
+	ul.inquiry-sidenav li {
+		float: left;
+		margin: 0 5px;}
+	
+	.btn {
+		width: 50%;}
 
 
 }

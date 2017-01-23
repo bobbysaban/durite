@@ -45,12 +45,12 @@ h2 {
 
 <body>
 
-<!-- nav -->
-<div class="nav-container wow fadeIn" >
+<!-- NAVIGATION -->
+<div class="nav-container" style="padding:0;">
 	<div class="logo" style="padding:0;">
 		<a href="#"><img src="assets/logo.png" width="30" /></a>
 	</div>   
-
+	
 	<ul class="inquiry-sidenav">
 
 		<li> <a href="#one" class="dot"> &nbsp; </a></li> 
@@ -67,19 +67,57 @@ h2 {
 		<li> <a href="#twelve" class="dot"> &nbsp; </a></li> 
 	</ul>
 	
-	<button class="hamburger hamburger--squeeze" type="button">
-	  <span class="hamburger-box">
-		<span class="hamburger-inner"></span>
-	  </span>
-	</button>
 </div>
 
+<!-- HAMBURGER -->	
+<button class="hamburger hamburger--squeeze" type="button">
+	<span class="hamburger-box">
+		<span class="hamburger-inner"></span>
+	</span>
+</button>
+	
+<!-- HAMBURGER NAV -->
+<div class="hamburger-nav col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
-<div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
- 
+ 	<div class="main-nav vertAlign">
+		<h1 class="wow fadeInRight animated"> <a href="#"> Home </a> </h1>
+		<ul class="wow fadeInRight animated"> <a href="#"> Products </a> </h1>		
+			<li> <a href="#"> Countertops </a> </li>
+			<li> <a href="#"> Vanity Tops </a> </li>
+			<li> <a href="#"> Bathroom Tubs </a> </li>
+			<li> <a href="#"> Shower Basins </a> </li>
+			<li> <a href="#"> Furniture & Urns </a> </li>
+		</ul>
+		
+		<ul class="wow fadeInRight animated"> <a href="#"> Process </a> </h1>		
+			<li> <a href="#"> Manufacturing </a> </li>
+			<li> <a href="#"> Fabrication </a> </li>
+			<li> <a href="#"> Mass Production </a> </li>
+		</ul>
+			
+		<h1 class="wow fadeInRight animated"> <a href="#"> Portfolio </a> </h1>
+		<h1 class="wow fadeInRight animated cta"> <a href="#"> Get A Quote </a> </h1>
+	</div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 overlay"></div>
+
+
+
+
+<div class="inquiry-wrapper container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 	
+ 	<div class="intro col-lg-8 col-md-8 col-sm-8 col-xs-12">
+		<h1>
+			Please fill out the following 12 questions  to the best of your ability, and 
+			we will get back to you shortly!
+		</h1>
+		<a href="#one"><div class="cta btn"> Start </div></a>
+ 	</div>
+ 	
 	<form id="inquiry" action="" method="post">
 
-		<div class="form-field" id="one">
+		<div class="form-field col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp" id="one">
 			<div class="vertAlign">
 				<label for="what-are-you-designing?">1. What are you designing?</label><br>
 				<h4> Select all that apply </h4>
@@ -98,14 +136,14 @@ h2 {
 			</div>
 		</div>
   
-		<div class="form-field" id="two">
+		<div class="form-field col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp" id="two">
 			<div class="vertAlign">
 				<label for="material">2. What material are you trying to match? </label><br>
 				<input name="material" id="yourName" type="text" value="" size="40" aria-required="true" placeholder="materials">
 			</div>
 		</div>
 			
-		<div class="form-field" id="three">
+		<div class="form-field col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp" id="three">
 			<div class="vertAlign">
 				<label for="upload">3. Do you have designs for the Plan View and Cross Sections?</label><br>
 				<input type="file" name="pic" accept="image/*">
@@ -186,12 +224,14 @@ h2 {
 			</div>
 		</div>
 		 
-		<p><input type="submit" /></p>
+		
 	</form>
 	
-	<h2>JSON</h2>
-	
-	<pre id="result"></pre>
+	<div class="intro col-lg-6 col-md-6 col-sm-8 col-xs-12">
+		<p><input type="submit" /></p>
+		<h2>JSON</h2>	
+		<pre id="result"></pre>
+	</div>
  
 </div>   
 
@@ -200,81 +240,9 @@ h2 {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/inquiry.js"></script>	
 
-
-	<script>
 	
-		$.fn.serializeObject = function()
-		{
-			var o = {};
-			var a = this.serializeArray();
-			$.each(a, function() {
-				if (o[this.name] !== undefined) {
-					if (!o[this.name].push) {
-						o[this.name] = [o[this.name]];
-					}
-					o[this.name].push(this.value || '');
-				} else {
-					o[this.name] = this.value || '';
-				}
-			});
-			return o;
-		};
-
-		$(function() {
-			$('form').submit(function() {
-				$('#result').text(JSON.stringify($('form').serializeObject()));
-				return false;
-			});
-		});
-	
-	
-	var hamburger = document.querySelector(".hamburger");
-	hamburger.addEventListener("click", function() {
-	hamburger.classList.toggle("is-active");
-	});	
-
-		$(document).ready(function () {
-			$(document).on("scroll", onScroll);
-	
-			//smoothscroll
-			$('a[href^="#"]').on('click', function (e) {
-				e.preventDefault();
-				$(document).off("scroll");
-		
-				$('a').each(function () {
-					$(this).removeClass('active');
-				})
-				$(this).addClass('active');
-	  
-				var target = this.hash,
-					menu = target;
-				$target = $(target);
-				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top+2
-				}, 500, 'swing', function () {
-					window.location.hash = target;
-					$(document).on("scroll", onScroll);
-				});
-			});
-		});
-
-		function onScroll(event){
-			var scrollPos = $(document).scrollTop();
-			$('.inquiry-sidenav a').each(function () {
-				var currLink = $(this);
-				var refElement = $(currLink.attr("href"));
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('ul.inquiry-sidenav li a').removeClass("active-dot");
-					currLink.addClass("active-dot");
-				}
-				else{
-					currLink.removeClass("active-dot");
-				}
-			});
-		}
-
-	</script>
 
 </body>
 </html>
