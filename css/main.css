@@ -132,6 +132,9 @@ a:hover {
 .inquiry-wrapper a{
 	color: #f66012;}
 
+.btn a{
+	color: white !important;}
+
 .btn:hover, .btn:focus, .btn.focus {
     color: white;
     text-decoration: none;
@@ -200,7 +203,6 @@ section .copy {
 /* ---------- nav ---------- */
 
 .nav-container {
-	height: 100vh;
 	width: 100px;
 	position: fixed;
 	z-index: 97;}
