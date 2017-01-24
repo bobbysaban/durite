@@ -348,13 +348,13 @@ ul.nav hr {
     text-align: center;
     line-height: 48px;}
     
-.product-slider .slide-1 {background-image: url('/durite/master/img/products/basin.jpg')}
-.product-slider .slide-2 {background-image: url('/durite/master/img/products/counter.jpg')}
-.product-slider .slide-3 {background-image: url('/durite/master/img/products/vanity.jpg')}
-.product-slider .slide-4 {background-image: url('/durite/master/img/products/wall.jpg')}
-.product-slider .slide-5 {background-image: url('/durite/master/img/products/bath.jpg')}
-.product-slider .slide-6 {background-image: url('/durite/master/img/products/precast.jpg')}
-.product-slider .slide-7 {background-image: url('/durite/master/img/products/bath.jpg')}
+.product-slider .slide-1 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/basin.jpg')}
+.product-slider .slide-2 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg')}
+.product-slider .slide-3 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/vanity.jpg')}
+.product-slider .slide-4 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/wall.jpg')}
+.product-slider .slide-5 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/bath.jpg')}
+.product-slider .slide-6 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/precast.jpg')}
+.product-slider .slide-7 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/bath.jpg')}
 
 /* ---------- FORM ---------- */
 
