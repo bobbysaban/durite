@@ -23,19 +23,6 @@ $(document).ready(function () {
 	  cssEase: 'ease-in-out'
   	});
 
-	//product slider
-    $('.mobile-product-slider').slick({
-	  slidesToShow: 2,
-	  slidesToScroll: 1,
-	  autoplay: false,
-	  speed: 300,
-	  autoplaySpeed: 100,
-	  swipe: true,
-	  dots: true,
-	  infinite: true,
-	  cssEase: 'linear'
-  	});
-
  	$('.product-slide').slickLightbox();
 
 	//process slider
