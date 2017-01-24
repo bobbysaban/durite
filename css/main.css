@@ -478,26 +478,35 @@ input[type="radio"], input[type="checkbox"] {
 #product-page .intro{
     padding-top: 20vh !important;
 }
+
+/* 
+#product-page .info:nth-child(odd) {
+	padding: 50px 0 50px 50px;}
+
+#product-page .info:nth-child(even) {
+	padding: 50px 50px 50px 0;}
+ */
+
+#product-page .info {
+	padding: 30px}
+	
 #product-page .hero {
 	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
 	}
 
-#product-page .copy h1 {	
+#product-page  h1 {	
 	margin: 50px 0 25px !important;
 	}
 	
-#product-page .copy p {
+#product-page  p {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 32px;
     color: rgba(0, 0, 0, 1);}
     
-#product-page .copy  h2 {
-    font-family: 'Helvetica';
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    color: rgba(0, 0, 0, .5);
+#product-page   h2 {
+    font-size: 14px;
+
 }
 
 #products-page h3 {
