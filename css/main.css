@@ -475,6 +475,9 @@ input[type="radio"], input[type="checkbox"] {
 
 /* ---------- PRODUCT PAGE ---------- */
 
+#product-page .intro{
+    padding-top: 20vh !important;
+}
 #product-page .hero {
 	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
 	}
