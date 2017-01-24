@@ -186,7 +186,7 @@ section .copy {
 	height: 475px;
 	background-color: #d6d6d6;
 	float: right;
-	background-image: url(../img/temp-hero.jpg);
+	background-image: url('https://github.com/bobsaban/durite/blob/master/img/temp-hero.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
 	}
