@@ -3,20 +3,24 @@ $(document).ready(function () {
     $('.hamburger').on('click', function() {
         $('.hamburger-nav').fadeToggle();
         $('.overlay').fadeToggle();
-
     });
-    	        		
+    	
+    $('.overlay, .hamburger-nav a').on('click', function() {
+        $('.hamburger-nav').fadeToggle();
+        $('.overlay').fadeToggle();
+    });
+            		
 	//product slider
     $('.product-slider').slick({
 	  slidesToShow: 4,
 	  slidesToScroll: 1,
-	  autoplay: false,
-	  speed: 300,
-	  autoplaySpeed: 100,
+	  autoplay: true,
+	  speed: 3000,
+	  autoplaySpeed: 3000,
 	  swipe: true,
 	  dots: true,
 	  infinite: true,
-	  cssEase: 'linear'
+	  cssEase: 'ease-in-out'
   	});
 
 	//product slider
@@ -61,6 +65,12 @@ $(document).ready(function () {
 	  infinite: true,
 	  cssEase: 'linear'
   	});
+
+
+});
+
+$(document).ready(function () {
+
   	
 	wow = new WOW(
 		{
@@ -73,10 +83,20 @@ $(document).ready(function () {
 	)
 	
 	wow.init();
-
-});
-
-$(document).ready(function () {
+	
+	wow2 = new WOW(
+		{
+		boxClass:     'wow',       
+		animateClass: 'animated',  
+		offset:       100,           
+		mobile:       true,     
+		live:         true        
+		}
+	)	
+	
+	wow2.init();
+	
+	
     $(document).on("scroll", onScroll);
     
     //smoothscroll
