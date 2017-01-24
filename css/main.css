@@ -473,6 +473,37 @@ input[type="radio"], input[type="checkbox"] {
 	display: block;
 	margin: auto;}
 
+/* ---------- PRODUCT PAGE ---------- */
+
+#product-page .hero {
+	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
+	}
+
+#product-page .copy h1 {	
+	margin: 50px 0 25px !important;
+	}
+	
+#product-page .copy p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+    color: rgba(0, 0, 0, 1);}
+    
+#product-page .copy  h2 {
+    font-family: 'Helvetica';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .5);
+}
+
+#products-page h3 {
+	padding-left: 10px;
+    margin-bottom: 50px;}
+    
+    
+   
+
 /* ---------- 950px ---------- */
 
 @media only screen and (max-width: 950px){ 
