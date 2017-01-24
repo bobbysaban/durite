@@ -67,8 +67,8 @@ input {
     color: #9E9E9E;
     }
 
-.form-field h4 {
-    font-weight: 400;
+.form-field h4, select {
+    font-weight: 300;
     color: rgba(0, 0, 0, .75);
     margin: 0;
 }
@@ -133,7 +133,7 @@ a:hover {
 	color: #f66012;}
 
 .btn:hover, .btn:focus, .btn.focus {
-    color: #f66012;
+    color: white;
     text-decoration: none;
 }
     
@@ -218,9 +218,6 @@ ul.nav, ul.inquiry-sidenav {
     left: 28px;
     padding: 0;
     }
-
-ul.inquiry-sidenav {
-	left: 45px;}
 
 .vertical-line {
 	border-right: 1px solid #D7D7D7;
@@ -407,8 +404,7 @@ input[type="radio"], input[type="checkbox"] {
     float: left;
 }
 
-.form-field {
-    padding: 15vh 0 5vh;
+.form-field {  
     display: block;
     position: relative;
     width: 100%;
@@ -419,8 +415,24 @@ input[type="radio"], input[type="checkbox"] {
 .upload-wrapper {
 	border: 1px solid #d6d6d6;
     height: 25vh;
-    margin: 0 2%;}
+    margin: 2%;}
+    
+.form-field h2 {
+	margin-bottom: 0px;}
 
+.submit, .btn {
+	margin: 50px 0;
+    font-size: 18px;
+    border: 2px solid #f66012;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 0;
+    background: #f66012;
+    color: white;
+    font-weight: 500;}
+
+
+    
 /* ---------- PROCESS ---------- */
 
 #process .copy {
