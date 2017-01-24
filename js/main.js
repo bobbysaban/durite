@@ -15,7 +15,7 @@ $(document).ready(function () {
 	  slidesToShow: 4,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  speed: 3000,
+	  speed: 1000,
 	  autoplaySpeed: 3000,
 	  swipe: true,
 	  dots: true,
