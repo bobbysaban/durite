@@ -115,7 +115,7 @@ a:hover {
 	-o-transition: opacity 0.25s linear;
 	transition: opacity 0.25s linear;}
  
-.cta a {
+.cta a, a.cta {
 	color: #f8884d !important;
     font-weight: 500 !important;
     cursor: pointer;}
@@ -477,34 +477,26 @@ input[type="radio"], input[type="checkbox"] {
 
 #product-page .intro{
     padding-top: 20vh !important;
-}
 
-/* 
-#product-page .info:nth-child(odd) {
-	padding: 50px 0 50px 50px;}
-
-#product-page .info:nth-child(even) {
-	padding: 50px 50px 50px 0;}
- */
 
 #product-page .info {
-	padding: 30px}
+	padding: 0 120px 30px 0;}
 	
 #product-page .hero {
 	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
 	}
 
-#product-page  h1 {	
-	margin: 50px 0 25px !important;
+#product-page h1 {	
+	margin-bottom: 10px !important;
 	}
 	
-#product-page  p {
+#product-page p {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 32px;
     color: rgba(0, 0, 0, 1);}
     
-#product-page   h2 {
+#product-page h2 {
     font-size: 14px;
 
 }
@@ -512,8 +504,22 @@ input[type="radio"], input[type="checkbox"] {
 #products-page h3 {
 	padding-left: 10px;
     margin-bottom: 50px;}
-    
-    
+   
+/* ---------- PRODUCT PAGE NEW ---------- */
+ 
+.intro-copy {
+	padding-top: 0px;} 
+
+#product-page #intro {
+	height: 100vh;
+	padding-top: 0 !important;}
+
+#product-page h1 {
+	font-size: 24px;
+	line-height: 36px;}
+
+#product-page .hero {
+	height: 350px;}
    
 
 /* ---------- 950px ---------- */
