@@ -42,7 +42,7 @@
 }
 #process .slick-prev, #process .slick-next
 {
-    bottom: 75px;
+    bottom: 25px;
 
 }
 
@@ -113,7 +113,7 @@
 
 #process .slick-next
 {
-    left: 55%;
+    left: 54%;
 }
 [dir='rtl'] .slick-next
 {
@@ -153,8 +153,9 @@
 }
 
 #process .slick-dots {
-	bottom: 82.5px;
-    left: 58%;}
+    bottom: -50px;
+    left: 0;
+}
     
 .slick-dots li
 {

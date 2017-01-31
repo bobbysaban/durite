@@ -12,15 +12,31 @@ $(document).ready(function () {
             		
 	//product slider
     $('.product-slider').slick({
-	  slidesToShow: 4,
+	  slidesToShow: 5,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  speed: 1000,
-	  autoplaySpeed: 3000,
+	  speed: 12000,
+	  autoplaySpeed: 0,
 	  swipe: true,
 	  dots: true,
 	  infinite: true,
-	  cssEase: 'ease-in-out'
+	  cssEase: 'ease-in-out',
+	  responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				speed: 18000,
+				dots: true
+			  }
+			
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
   	});
 
  	$('.product-slide').slickLightbox();
@@ -36,6 +52,7 @@ $(document).ready(function () {
 	  fade: true,
 	  dots: true,
 	  infinite: true,
+	  arrows: false,
 	  cssEase: 'linear'
   	});
   	

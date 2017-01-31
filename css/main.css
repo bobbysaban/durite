@@ -1,8 +1,8 @@
 /* ---------- TYPOGRAPHY ---------- */
 
 h1, label, ul {
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 26px;
+    line-height: 42px;
     font-weight: 300;
     color: rgba(74, 74, 74, 1);
     font-family: 'Helvetica';
@@ -159,8 +159,6 @@ a:hover {
 	opacity: 1;
 }
 	
-
-
 .quote.btn {
     outline: none;
     position: fixed;
@@ -199,10 +197,9 @@ a:hover {
 body {
 	padding: 0;}
 
-
 section {
 	display: inline-block;
-	padding-top: 33vh !important;}
+	margin: 15vh auto;}
 
 #product-page .grid:nth-child(even) {
 	padding: 100px 150px 25px 150px !important;}
@@ -223,7 +220,7 @@ section > div:last-child {
 	margin-bottom: 0px;}
 	
 section:last-child {
-	margin-bottom: 100px !important;
+	margin-bottom: 150px !important;
 	background: white;}
 
 .vertAlign {
@@ -234,12 +231,19 @@ section:last-child {
     position: relative;}
 
 .container {
-	padding: 0px 100px 0 100px;
-	float: left;
+	float: none;
 	}
 
 .intro {
-	padding-top: 250px;}
+	padding-top: 0 !important;
+	height:55vh; 
+	margin-bottom:0 !important;
+}
+
+.intro .vertAlign{
+	margin: auto;
+	display: block;
+	float: none;}
 
 .inquiry-wrapper .intro {
 	padding-top: 200px;
@@ -247,6 +251,12 @@ section:last-child {
 	
 section .copy {
 	padding-left: 50px;}
+
+.bg-slide  {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #d6d6d6;
+	padding: 0;}
 
 .hero {
 	height: 475px;
@@ -399,12 +409,13 @@ ul.nav hr {
 	padding: 0;
 	}
 	
-.bg-slide  {
+.product-slider .bg-slide  {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #d6d6d6;
-    height: 40vh;
-    padding: 0;}
+    padding: 0;
+    height: 30vh;
+    filter: grayscale(100%);}
 
 .product-slider h3 {
 	text-transform: capitalize;
@@ -504,7 +515,15 @@ input[type="radio"], input[type="checkbox"] {
 /* ---------- PROCESS ---------- */
 
 .process {
-	margin: 50px auto;}
+	margin: 50px auto;
+	height: 50vh;
+	padding: 0;}
+	
+.process-slide {
+	height: 50vh;}
+
+.process-slider .slick-list {
+	height: 50vh;}
 
 .process:first-child {
 	margin: 0 auto 50px;}
@@ -512,17 +531,21 @@ input[type="radio"], input[type="checkbox"] {
 .process:nth-child(3) {
 	margin: 50px auto 0;}
 	
+#process .vertAlign {
+    padding: 0 50px 0 100px !important;
+}
+	
 #process .copy {
 	padding-left: 100px;}
 
 #process p {
 	margin-top: 16px;}
 
-	
-.process-slide .bg-slide {
+.process .bg-slide {
 	height: 50vh;
 	background-color: #d6d6d6;
 	}
+	
 
 /* ---------- PROJECTS ---------- */
 
@@ -613,9 +636,9 @@ input[type="radio"], input[type="checkbox"] {
 
 @media only screen and (max-width: 950px){ 
 	
-	.bg-slide  {
+	.product .bg-slide {
 		height: 25vh;}
-
+		
 	.info-wrap .info:nth-child(even) {
 		padding: 0 0 30px 0px;}
 	
@@ -630,25 +653,37 @@ input[type="radio"], input[type="checkbox"] {
 		-webkit-transform: initial;
 		}
 	
-	.hamburger-nav .vertAlign {
+	.hamburger-nav .vertAlign, .intro .vertAlign {
 		transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
 		top: 50%;
 		position: relative;
 		}
-
 	
 	.process {
 		height: initial !important;}
 	
+	#process .vertAlign {
+		padding-left: 50px !important;
+	}
+
+	.process .bg-slide {
+		height: 30vh;
+		}
+		
 	.leftAlign {
 		padding-left: 0 !important;}
-		
-	#process .vertAlign {
-		padding-left: 50px !important;}
 	
-
+	#process .slick-dots {
+		bottom: 0;
+		left: 0;
+	}
+	
+	#process .slick-prev, #process .slick-next {
+		bottom: 50px;
+		display: none !important;
+	}
 	
 }	
 
@@ -664,7 +699,7 @@ input[type="radio"], input[type="checkbox"] {
 		display: block;}
 		
 	section {
-		padding: 25px 0 !important;}
+		margin: 5vh auto;}
 	
 	section > div {
 		margin-bottom: 100px;}
@@ -739,7 +774,8 @@ input[type="radio"], input[type="checkbox"] {
 		height: 33vh;}
 	
 	.intro {
-		padding-top: 22vh !important;}
+		padding: 0;
+		margin-top: 20vh;}
 
 	/* ---------- HAMBURGER NAV ---------- */
 		
@@ -790,7 +826,8 @@ input[type="radio"], input[type="checkbox"] {
 		padding: 5px 10px 0 0; }
 	
 	.product:nth-child(even){
-		padding: 5px 0 0 10px; }
+		padding: 5px 0 0 10px;
+		margin-bottom: 15px; }
 		
 	.bg-slide {
 		height: 150px;
@@ -816,14 +853,32 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.process-wrapper > div:nth-child(even) {
 		margin-bottom: 50px;}
+	
+	.process-wrapper .bg-slide  {
+		height: 40vh;}
+		
+	#process .vertAlign {
+		padding-left: 0px !important;
+	}
 
 	/* ---------- PROJECTS BRANDS ---------- */
 	
+	#portfolio > div {
+		margin-bottom: 25px;}
+
 	.brands .col-xs-4 {
     	min-height: 75px;}
     	
 	.brands img {
 		width: 100%;}
+	
+	.brands > div {
+		padding: 7px;}
+	
+	section:last-child {
+		margin-bottom: 0px !important;
+		background: white;
+	}
 
 	/* ---------- INQUIRY FORM ---------- */
 		
