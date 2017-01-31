@@ -32,6 +32,14 @@ h4 {
 	color: rgba(0, 0, 0, .5);
 	}
 
+h5 {
+	font-family: 'Helvetica';
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, .5);
+	}
+	
 p {
 	font-family: 'Helvetica';
 	font-size: 14px;
@@ -124,10 +132,53 @@ a:hover {
 	margin-top: 50px;
     font-size: 20px;
     width: 20%;
-    border: 2px solid #f66012;
     text-align: center;
     padding: 10px;
-    border-radius: 0;}
+    border-radius: 0;
+
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-ms-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+	}
+
+.btn:hover {
+	text-decoration:none;
+	background-color: #f6f6f6;
+	-webkit-transition: background 0.2s linear;
+	-moz-transition: background 0.2s linear;
+	-ms-transition: background 0.2s linear;
+	-o-transition: background 0.2s linear;
+	transition: background 0.2s linear;}
+
+.btn:hover a {
+			color: #f8884d !important;}
+
+.btn a {
+	opacity: 1;
+}
+	
+
+
+.quote.btn {
+    outline: none;
+    position: fixed;
+    top: 2%;
+    margin: 0;
+    right: 112.5px;
+    height: 18px;
+    z-index: 100;
+    width: 125px;
+    height: 40px;
+    padding: 0 !important;
+    border-radius: 2px;}
+
+.quote.btn a {
+	line-height: 40px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;}
 
 .inquiry-wrapper a{
 	color: #f66012;}
@@ -153,6 +204,17 @@ section {
 	display: inline-block;
 	padding-top: 33vh !important;}
 
+#product-page .grid:nth-child(even) {
+	padding: 100px 150px 25px 150px !important;}
+
+#product-page .grid:nth-child(odd) {
+	padding: 0px 150px 100px 150px !important;}
+
+body .grid:first-child {
+	padding: 100px 100px 0px 200px !important;}
+	
+.alt-bg {
+	background-color: #f6f6f6;}
 
 section > div {
 	margin-bottom: 27vh;}
@@ -161,7 +223,8 @@ section > div:last-child {
 	margin-bottom: 0px;}
 	
 section:last-child {
-	margin-bottom: 100px !important;}
+	margin-bottom: 100px !important;
+	background: white;}
 
 .vertAlign {
     transform: translateY(-50%);
@@ -171,7 +234,7 @@ section:last-child {
     position: relative;}
 
 .container {
-	padding: 0px 100px 0 200px;
+	padding: 0px 100px 0 100px;
 	float: left;
 	}
 
@@ -346,7 +409,8 @@ ul.nav hr {
 .product-slider h3 {
 	text-transform: capitalize;
     text-align: center;
-    line-height: 48px;}
+    line-height: 20px;
+    margin-top: 16px;}
     
 .product-slider .slide-1 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/basin.jpg')}
 .product-slider .slide-2 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg')}
@@ -428,7 +492,6 @@ input[type="radio"], input[type="checkbox"] {
 .submit, .btn {
 	margin: 50px 0;
     font-size: 18px;
-    border: 2px solid #f66012;
     text-align: center;
     padding: 12px !important;
     border-radius: 0;
@@ -465,7 +528,7 @@ input[type="radio"], input[type="checkbox"] {
 
 .project{
 	background-color: #d6d6d6;
-	height: 270px;
+	height: 33vh;
 	padding: 25px;
 	}
 
@@ -476,18 +539,24 @@ input[type="radio"], input[type="checkbox"] {
 /* ---------- PRODUCT PAGE ---------- */
 
 #product-page .intro{
-    padding-top: 20vh !important;
+    padding-top: 20vh !important;}
 
-
-#product-page .info {
-	padding: 0 120px 30px 0;}
+.info-wrap .info {
+    min-height: 200px;}
+          
+.info-wrap .info:nth-child(even) {
+    padding: 0 0 30px 30px;}
 	
+.info-wrap .info:nth-child(odd) {
+    padding: 0 30px 30px 0;}
+
+        
 #product-page .hero {
 	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
 	}
 
 #product-page h1 {	
-	margin-bottom: 10px !important;
+	margin-bottom: 30px !important;
 	}
 	
 #product-page p {
@@ -495,11 +564,6 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 22px;
     margin-bottom: 32px;
     color: rgba(0, 0, 0, 1);}
-    
-#product-page h2 {
-    font-size: 14px;
-
-}
 
 #products-page h3 {
 	padding-left: 10px;
@@ -511,8 +575,18 @@ input[type="radio"], input[type="checkbox"] {
 	padding-top: 0px;} 
 
 #product-page #intro {
-	height: 100vh;
-	padding-top: 0 !important;}
+	height: 95vh;
+	padding-top: 0 !important;
+	}
+
+.intro-copy .copy {
+	padding:50px 100px 50px 0;}
+
+#product-page .hero{
+	right: 150px;}
+
+#product-page #intro div {
+	position: fixed;}
 
 #product-page h1 {
 	font-size: 24px;
@@ -522,25 +596,64 @@ input[type="radio"], input[type="checkbox"] {
 	height: 350px;}
    
 
+/* ---------- RELATED PRODUCTS ---------- */
+
+#related-products .product {
+    outline: none;
+    float: left;}
+
+#related-products .bg-slide {
+	height: 23vh;
+	margin-bottom: 12px;}
+
+#related-products h3 {
+	font-size: 12px;
+	text-align: center;}
 /* ---------- 950px ---------- */
 
 @media only screen and (max-width: 950px){ 
-
-
-.product-slider {
-	display: none !important;}
 	
-.mobile-product {
-	display: block !important;}
+	.bg-slide  {
+		height: 25vh;}
+
+	.info-wrap .info:nth-child(even) {
+		padding: 0 0 30px 0px;}
 	
-.bg-slide  {
-    height: 30vh;}
-    
-    
+	.info-wrap .info {
+		min-height: initial;
+	}
+		
+	.vertAlign, ul.inquiry-sidenav {
+		top: initial;
+		transform: initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		}
+	
+	.hamburger-nav .vertAlign {
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		top: 50%;
+		position: relative;
+		}
+
+	
+	.process {
+		height: initial !important;}
+	
+	.leftAlign {
+		padding-left: 0 !important;}
+		
+	#process .vertAlign {
+		padding-left: 50px !important;}
+	
+
+	
 }	
 
 /* ---------- IPHONE ---------- */	
-@media only screen and (max-width: 700px){ 
+@media only screen and (max-width: 768px){ 
 
 	/* ---------- GENERAL ---------- */
 
@@ -569,13 +682,7 @@ input[type="radio"], input[type="checkbox"] {
 
 	section .copy {
 		padding: 0;}
-	
-	.vertAlign, ul.inquiry-sidenav {
-		top: initial;
-		transform: initial;
-		-ms-transform: initial;
-		-webkit-transform: initial;
-		}
+
 		
 	.hamburger-nav .vertAlign {
 		transform: translateY(-50%);
@@ -646,7 +753,12 @@ input[type="radio"], input[type="checkbox"] {
 	
 	/* ---------- PRODUCT SLIDER ---------- */
 
-		
+	.product-slider {
+		display: none !important;}
+	
+	.mobile-product {
+		display: block !important;}
+				
     .mobile-product-slider {
     	width: 100%;}
 	
@@ -736,6 +848,31 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.btn {
 		width: 50%;}
+
+	/* ---------- PRODUCT PAGE ---------- */
+		
+		#product-page #intro div {
+			position: relative;}
+			
+		body .grid:first-child {
+			padding: 100px 100px 0px 100px !important;
+		}
+		
+		#product-page .grid:nth-child(odd) {
+			padding: 100px !important;
+		}
+
+		#product-page #intro {
+			padding-top: 100px !important;
+		}
+		
+		#product-page .hero {
+			right: inherit;
+		}
+		
+		#product-page .grid:nth-child(even) {
+			padding: 50px !important;
+		}
 
 
 }
