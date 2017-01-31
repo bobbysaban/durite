@@ -162,7 +162,7 @@ a:hover {
 .quote.btn {
     outline: none;
     position: fixed;
-    top: 2%;
+    top: 3.5%;
     margin: 0;
     right: 112.5px;
     height: 18px;
@@ -200,12 +200,6 @@ body {
 section {
 	display: inline-block;
 	margin: 15vh auto;}
-
-#product-page .grid:nth-child(even) {
-	padding: 100px 150px 25px 150px !important;}
-
-#product-page .grid:nth-child(odd) {
-	padding: 0px 150px 100px 150px !important;}
 
 body .grid:first-child {
 	padding: 100px 100px 0px 200px !important;}
@@ -567,11 +561,10 @@ input[type="radio"], input[type="checkbox"] {
 .info-wrap .info {
     min-height: 200px;}
           
-.info-wrap .info:nth-child(even) {
-    padding: 0 0 30px 30px;}
+
 	
-.info-wrap .info:nth-child(odd) {
-    padding: 0 30px 30px 0;}
+.info-wrap .info {
+    padding-right:60px;}
 
         
 #product-page .hero {
@@ -594,6 +587,16 @@ input[type="radio"], input[type="checkbox"] {
    
 /* ---------- PRODUCT PAGE NEW ---------- */
  
+
+#product-page section {
+	margin: 0;}
+	
+#product-page .grid:nth-child(even) {
+	padding: 100px 150px 25px 150px !important;}
+
+#product-page .grid:nth-child(odd) {
+	padding: 0px 150px 100px 150px !important;}
+	
 .intro-copy {
 	padding-top: 0px;} 
 
@@ -644,6 +647,7 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.info-wrap .info {
 		min-height: initial;
+		padding-left: 0;
 	}
 		
 	.vertAlign, ul.inquiry-sidenav {
@@ -651,6 +655,7 @@ input[type="radio"], input[type="checkbox"] {
 		transform: initial;
 		-ms-transform: initial;
 		-webkit-transform: initial;
+		
 		}
 	
 	.hamburger-nav .vertAlign, .intro .vertAlign {
@@ -683,6 +688,19 @@ input[type="radio"], input[type="checkbox"] {
 	#process .slick-prev, #process .slick-next {
 		bottom: 50px;
 		display: none !important;
+	}
+	
+	#product-page #intro {
+		padding: 0 50px !important;
+	}
+	
+	#product-page #intro div {
+		position: relative;
+		margin-bottom: 0;
+	}
+	
+	#product-page .hero {
+		right: initial; 
 	}
 	
 }	
@@ -785,6 +803,8 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.hamburger-nav h1, .hamburger-nav ul {
 		text-align: right;
+		line-height: 40px;
+    	font-size: 18px;
 	}
 	
 	/* ---------- PRODUCT SLIDER ---------- */
@@ -906,6 +926,13 @@ input[type="radio"], input[type="checkbox"] {
 
 	/* ---------- PRODUCT PAGE ---------- */
 		
+		#product-page .hero {
+			height: 200px;
+		}
+		#product-page #intro {
+			padding: 0px 25px !important;
+		}
+
 		#product-page #intro div {
 			position: relative;}
 			
@@ -914,11 +941,16 @@ input[type="radio"], input[type="checkbox"] {
 		}
 		
 		#product-page .grid:nth-child(odd) {
-			padding: 100px !important;
+			padding: 50px !important;
+		}
+		
+		.info-wrap .info {
+			padding-right: 0px;
 		}
 
 		#product-page #intro {
 			padding-top: 100px !important;
+			margin-bottom: 100px;
 		}
 		
 		#product-page .hero {
@@ -928,6 +960,26 @@ input[type="radio"], input[type="checkbox"] {
 		#product-page .grid:nth-child(even) {
 			padding: 50px !important;
 		}
+		
+		#product-page .intro-copy .copy {
+			padding: 0px 0px 50px 0;
+		}
+		
+		.quote-btn-wrapper {
+			background-color: #f6f6f6;
+			position: fixed;
+			bottom: 0;
+			height: 75px;
+			width: 100%;
+			z-index: 98;}
+		
+		.quote.btn {
+			bottom: 17.5px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 85%;
+			top: inherit;}
 
 
 }
