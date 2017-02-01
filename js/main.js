@@ -8,36 +8,50 @@ $(document).ready(function () {
     $('.overlay, .hamburger-nav a').on('click', function() {
         $('.hamburger-nav').fadeToggle();
         $('.overlay').fadeToggle();
+        $('.hamburger').removeClass("is-active");
     });
             		
 	//product slider
-    $('.product-slider').slick({
-	  slidesToShow: 5,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  speed: 12000,
-	  autoplaySpeed: 0,
-	  swipe: true,
-	  dots: true,
-	  infinite: true,
-	  cssEase: 'ease-in-out',
-	  responsive: [
+	$('.product-slider').slick({
+		  slidesToShow: 5,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  speed: 12000,
+		  autoplaySpeed: 0,
+		  swipe: true,
+		  dots: true,
+		  infinite: true,
+		  cssEase: 'ease-in-out',	  
+		  responsive: [
 			{
 			  breakpoint: 1024,
 			  settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3,
 				infinite: true,
-				speed: 18000,
-				dots: true
+				speed: 12000,
+				dots: true,
+				swipe: true,
 			  }
-			
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				  autoplay: true,
+				  speed: 12000,
+				  autoplaySpeed: 0,
+				  arrows: false,
+				  swipe: true,
+				  dots: true,
+				  infinite: true,
+				  cssEase: 'ease-in-out',
+			  }
+			},
+
 		  ]
-  	});
+	});
 
  	$('.product-slide').slickLightbox();
 
@@ -56,7 +70,7 @@ $(document).ready(function () {
 	  cssEase: 'linear'
   	});
   	
-	//slick slider
+	//inquiry slider
     $('.inquiry-slider').slick({
 	  slidesToShow: 4,
 	  slidesToScroll: 1,
@@ -69,7 +83,6 @@ $(document).ready(function () {
 	  infinite: true,
 	  cssEase: 'linear'
   	});
-
 
 });
 
