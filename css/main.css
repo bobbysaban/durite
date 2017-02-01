@@ -296,7 +296,8 @@ ul.nav, ul.inquiry-sidenav {
 
 ul.nav li {
     writing-mode: vertical-RL;
-    -webkit-writing-mode: ertical-RL
+    -webkit-writing-mode: vertical-RL
+    
     -ms-writing-mode: tb-rl;
     
     font-size: 14px;
