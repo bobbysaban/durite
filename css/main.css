@@ -199,22 +199,15 @@ body {
 
 section {
 	display: inline-block;
-	margin: 15vh auto;}
+	margin: 150px auto 0;}
 
 body .grid:first-child {
 	padding: 100px 100px 0px 200px !important;}
 	
 .alt-bg {
 	background-color: #f6f6f6;}
-
-section > div {
-	margin-bottom: 27vh;}
-
-section > div:last-child {
-	margin-bottom: 0px;}
 	
 section:last-child {
-	margin-bottom: 150px !important;
 	background: white;}
 
 .vertAlign {
@@ -224,15 +217,17 @@ section:last-child {
     top: 50%;
     position: relative;}
 
-.container {
-	float: none;
-	}
+.container {float: none;}
 
 .intro {
-	padding-top: 0 !important;
-	height:55vh; 
-	margin-bottom:0 !important;
+    padding-top: 0;
+    margin: 33vh 0 auto;
 }
+
+.intro div:first-child {
+	float: none;
+	margin: auto;}
+	
 
 .intro .vertAlign{
 	margin: auto;
@@ -503,32 +498,33 @@ input[type="radio"], input[type="checkbox"] {
     background: #f66012;
     color: white;
     font-weight: 500;}
-
-
     
 /* ---------- PROCESS ---------- */
 
 .process {
-	margin: 50px auto;
 	height: 50vh;
 	padding: 0;}
-	
+
+#process div {
+	margin: 50px auto;
+}
+		
 .process-slide {
 	height: 50vh;}
 
 .process-slider .slick-list {
 	height: 50vh;}
 
-.process:first-child {
-	margin: 0 auto 50px;}
-
-.process:nth-child(3) {
-	margin: 50px auto 0;}
+#process .process-slider div {
+	margin: 0;}
 	
 #process .vertAlign {
-    padding: 0 50px 0 100px !important;
+    padding: 0 0px 0 100px !important;
 }
-	
+
+#process .leftAlign {
+    padding: 0 100px 0 50px !important;
+}	
 #process .copy {
 	padding-left: 100px;}
 
@@ -552,6 +548,11 @@ input[type="radio"], input[type="checkbox"] {
 #portfolio img {
 	display: block;
 	margin: auto;}
+
+.brands div {
+	margin: 100px auto;
+}
+	
 
 /* ---------- PRODUCT PAGE ---------- */
 
@@ -850,7 +851,7 @@ input[type="radio"], input[type="checkbox"] {
 	}
 	
 	.brands {
-		marign-top: 50px;}
+		marign: 50px 0;}
 		
 
 	.brands .col-xs-4 {
