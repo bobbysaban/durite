@@ -862,6 +862,10 @@ input[type="radio"], input[type="checkbox"] {
 		margin-bottom: 50px !important;
 		background: white;
 	}
+	
+	section > div:last-child {
+		padding: 0;
+	}
 
 	/* ---------- INQUIRY FORM ---------- */
 		
