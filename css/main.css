@@ -295,13 +295,16 @@ ul.nav, ul.inquiry-sidenav {
 }
 
 ul.nav li {
-    writing-mode: vertical-RL;
-    -webkit-writing-mode: vertical-RL
     
-    -ms-writing-mode: tb-rl;
-    
-    font-size: 14px;
-    line-height: 14px;}
+	font-size: 14px;
+	line-height: 14px;
+	display: -webkit-flex;display: -ms-flexbox;display: flex;
+	-webkit-writing-mode: vertical-lr;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-lr;
+	
+
+    }
 	
 ul.nav hr {
 	margin: 10px 12.5px;
