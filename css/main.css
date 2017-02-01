@@ -166,7 +166,7 @@ a:hover {
     margin: 0;
     right: 112.5px;
     height: 18px;
-    z-index: 100;
+    z-index: 98;
     width: 125px;
     height: 40px;
     padding: 0 !important;
@@ -202,7 +202,7 @@ section {
 	margin: 150px auto 0;}
 
 body .grid:first-child {
-	padding: 100px 100px 0px 200px !important;}
+	padding: 100px 100px 0px 200px;}
 	
 .alt-bg {
 	background-color: #f6f6f6;}
@@ -403,8 +403,7 @@ ul.nav hr {
     background-repeat: no-repeat;
     background-color: #d6d6d6;
     padding: 0;
-    height: 30vh;
-    filter: grayscale(100%);}
+    height: 30vh;}
 
 .product-slider h3 {
 	text-transform: capitalize;
@@ -555,6 +554,9 @@ input[type="radio"], input[type="checkbox"] {
 	
 
 /* ---------- PRODUCT PAGE ---------- */
+#product-page {
+	margin-bottom: 100px;}
+	
 
 #product-page .intro{
     padding-top: 20vh !important;}
@@ -562,12 +564,9 @@ input[type="radio"], input[type="checkbox"] {
 .info-wrap .info {
     min-height: 200px;}
           
-
-	
 .info-wrap .info {
     padding-right:60px;}
-
-        
+  
 #product-page .hero {
 	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
 	}
@@ -593,24 +592,25 @@ input[type="radio"], input[type="checkbox"] {
 	margin: 0;}
 	
 #product-page .grid:nth-child(even) {
-	padding: 100px 150px 25px 150px !important;}
+	padding: 100px 150px 25px 150px;}
 
 #product-page .grid:nth-child(odd) {
-	padding: 0px 150px 100px 150px !important;}
+	padding: 0px 150px 100px 150px;}
 	
 .intro-copy {
 	padding-top: 0px;} 
 
 #product-page #intro {
 	height: 95vh;
-	padding-top: 0 !important;
+	padding: 0 100px !important;
+	
 	}
 
 .intro-copy .copy {
 	padding:50px 100px 50px 0;}
 
 #product-page .hero{
-	right: 150px;}
+	right: 50px;}
 
 #product-page #intro div {
 	position: fixed;}
@@ -620,7 +620,7 @@ input[type="radio"], input[type="checkbox"] {
 	line-height: 36px;}
 
 #product-page .hero {
-	height: 350px;}
+	height: 300px;}
    
 
 /* ---------- RELATED PRODUCTS ---------- */
@@ -642,13 +642,10 @@ input[type="radio"], input[type="checkbox"] {
 	
 	.product .bg-slide {
 		height: 25vh;}
-		
-	.info-wrap .info:nth-child(even) {
-		padding: 0 0 30px 0px;}
 	
 	.info-wrap .info {
 		min-height: initial;
-		padding-left: 0;
+		padding: 0;
 	}
 		
 	.vertAlign, ul.inquiry-sidenav {
@@ -659,7 +656,7 @@ input[type="radio"], input[type="checkbox"] {
 		padding:0;
 		}
 	
-	.hamburger-nav .vertAlign, .intro .vertAlign {
+	.hamburger-nav .vertAlign, #product-page .vertAlign {
 		transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
@@ -690,19 +687,14 @@ input[type="radio"], input[type="checkbox"] {
 		bottom: 50px;
 		display: none !important;
 	}
-	
-	#product-page #intro {
-		padding: 0 50px !important;
-	}
+
+	/* ---------- PRODUCTS ---------- */
 	
 	#product-page #intro div {
-		position: relative;
 		margin-bottom: 0;
 	}
 	
-	#product-page .hero {
-		right: initial; 
-	}
+	
 	
 }	
 
@@ -720,6 +712,10 @@ input[type="radio"], input[type="checkbox"] {
 	section {
 		width: 85% !important;
 		margin: auto 7.5%;}
+		
+	#product-page section {
+		width: 100% !important;
+		margin: auto;}
 	
 	section > div {
 		margin-bottom: 50px;}
@@ -911,26 +907,22 @@ input[type="radio"], input[type="checkbox"] {
 		body .grid:first-child {
 			padding: 100px 100px 0px 100px !important;
 		}
-		
-		#product-page .grid:nth-child(odd) {
-			padding: 50px !important;
-		}
-		
-		.info-wrap .info {
-			padding-right: 0px;
-		}
 
 		#product-page #intro {
 			padding-top: 100px !important;
-			margin-bottom: 100px;
+			margin-bottom: 0px;
 		}
 		
 		#product-page .hero {
 			right: inherit;
 		}
 		
-		#product-page .grid:nth-child(even) {
-			padding: 50px !important;
+		#product-page .grid  {
+			padding: 30px !important;
+		}
+
+		#product-page .grid div:last-child, #product-page .info:last-child p  {
+			margin-bottom: 0px !important;
 		}
 		
 		#product-page .intro-copy .copy {
@@ -952,6 +944,11 @@ input[type="radio"], input[type="checkbox"] {
 			margin: auto;
 			width: 85%;
 			top: inherit;}
+		
+		#related-products .bg-slide {
+			height: 15vh;
+			margin-bottom: 10px;
+		}
 
 
 }
