@@ -296,6 +296,9 @@ ul.nav, ul.inquiry-sidenav {
 
 ul.nav li {
     writing-mode: vertical-RL;
+    -webkit-writing-mode: ertical-RL
+    -ms-writing-mode: tb-rl;
+    
     font-size: 14px;
     line-height: 14px;}
 	
@@ -848,18 +851,11 @@ input[type="radio"], input[type="checkbox"] {
 		padding:0 0 0 10px;
 		}		
 	.project {
-		height: 15vh;
+		height: 25vh;
 	}
 	
 	.brands {
 		margin: 50px 0 0;}
-		
-
-	.brands .col-xs-4 {
-    	min-height: 70px;}
-    	
-	.brands img {
-		width: 65%;}
 	
 	.brands > div {
 		padding: 7px;}
@@ -967,7 +963,12 @@ input[type="radio"], input[type="checkbox"] {
 			padding:0;
 		}
 
+/* ---------- IPHONE ---------- */	
+@media only screen and (max-width: 375px){ 
 
+	.project {
+		height: 15vh;
+	}
 }
 
 
