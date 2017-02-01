@@ -648,7 +648,7 @@ input[type="radio"], input[type="checkbox"] {
 		padding: 0;
 	}
 		
-	.vertAlign, ul.inquiry-sidenav {
+	.vertAlign, ul.inquiry-sidenav, #intro .vertAlign {
 		top: initial;
 		transform: initial;
 		-ms-transform: initial;
@@ -689,12 +689,7 @@ input[type="radio"], input[type="checkbox"] {
 	}
 
 	/* ---------- PRODUCTS ---------- */
-	
-	#product-page #intro div {
-		margin-bottom: 0;
-	}
-	
-	
+
 	
 }	
 
@@ -716,9 +711,6 @@ input[type="radio"], input[type="checkbox"] {
 	#product-page section {
 		width: 100% !important;
 		margin: auto;}
-	
-	section > div {
-		margin-bottom: 50px;}
 		
 	.container {
 		padding: 0 0px;
@@ -768,8 +760,19 @@ input[type="radio"], input[type="checkbox"] {
 		border: none;
 		width: 100%;
 	}
-		.intro {
-		padding: 0;}
+	
+	.intro {
+		padding: 0;
+		margin: 20vh auto 10vh;
+		display:block;
+		float: none;}
+
+	 #process div {
+		margin: 25px auto 0;
+	}
+	
+	.process div {
+		margin: 0 auto;}
 
 	/* ---------- HAMBURGER NAV ---------- */
 		
@@ -833,6 +836,8 @@ input[type="radio"], input[type="checkbox"] {
 
 	/* ---------- PROJECTS BRANDS ---------- */
 
+	#portfolio {
+		margin-top: 50px;}
 	#portfolio div:first-child {
 		padding: 0 10px 0 0;
 		}
@@ -847,7 +852,7 @@ input[type="radio"], input[type="checkbox"] {
 	}
 	
 	.brands {
-		marign: 50px 0;}
+		margin: 50px 0 0;}
 		
 
 	.brands .col-xs-4 {
@@ -948,6 +953,18 @@ input[type="radio"], input[type="checkbox"] {
 		#related-products .bg-slide {
 			height: 15vh;
 			margin-bottom: 10px;
+		}
+		
+		.brands div {
+			margin: 10px auto;
+		}
+		
+		#intro .vertAlign {
+			top: initial;
+			transform: initial;
+			-ms-transform: initial;
+			-webkit-transform: initial;
+			padding:0;
 		}
 
 
