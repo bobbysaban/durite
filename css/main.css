@@ -848,12 +848,16 @@ input[type="radio"], input[type="checkbox"] {
 	.project {
 		height: 15vh;
 	}
+	
+	.brands {
+		marign-top: 50px;}
+		
 
 	.brands .col-xs-4 {
-    	min-height: 75px;}
+    	min-height: 70px;}
     	
 	.brands img {
-		width: 100%;}
+		width: 65%;}
 	
 	.brands > div {
 		padding: 7px;}
