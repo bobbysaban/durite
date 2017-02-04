@@ -448,6 +448,11 @@ ul.nav hr {
  
 /* ---------- FORM ---------- */
 
+.inquiry-wrapper.container {
+    float: none;
+    padding: 0;
+    margin-right: auto;
+}
 
 ul.inquiry-nav {
 	transform: translateY(-50%);
