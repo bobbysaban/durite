@@ -13,10 +13,10 @@ $(document).ready(function () {
             		
 	//product slider
 	$('.product-slider').slick({
-		  slidesToShow: 5,
+		  slidesToShow: 4,
 		  slidesToScroll: 1,
-		  autoplay: true,
-		  speed: 20000,
+		  autoplay: false,
+		  speed: 2000,
 		  autoplaySpeed: 0,
 		  swipe: true,
 		  dots: true,
@@ -51,9 +51,9 @@ $(document).ready(function () {
 			  breakpoint: 600,
 			  settings: {
 				slidesToShow: 2,
-				slidesToScroll: 1,
-				  autoplay: true,
-				  speed: 12000,
+				slidesToScroll: 2,
+				  autoplay: false,
+				  speed: 2000,
 				  autoplaySpeed: 0,
 				  arrows: false,
 				  swipe: true,
@@ -106,7 +106,7 @@ $(document).ready(function () {
 		{
 		boxClass:     'wow',       
 		animateClass: 'animated',  
-		offset:       500,           
+		offset:       900,           
 		mobile:       true,     
 		live:         true        
 		}
@@ -144,7 +144,7 @@ $(document).ready(function () {
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
+        }, 1000, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
