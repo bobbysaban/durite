@@ -16,7 +16,7 @@ $(document).ready(function () {
 		  slidesToShow: 4,
 		  slidesToScroll: 1,
 		  autoplay: false,
-		  speed: 2000,
+		  speed: 1000,
 		  autoplaySpeed: 0,
 		  swipe: true,
 		  dots: true,
@@ -30,7 +30,7 @@ $(document).ready(function () {
 				slidesToShow: 3,
 				slidesToScroll: 3,
 				infinite: true,
-				speed: 12000,
+				speed: 2000,
 				dots: true,
 				swipe: true,
 			  }
@@ -41,7 +41,7 @@ $(document).ready(function () {
 				slidesToShow: 3,
 				slidesToScroll: 3,
 				infinite: true,
-				speed: 12000,
+				speed: 2000,
 				dots: true,
 				swipe: true,
 				arrows: false
