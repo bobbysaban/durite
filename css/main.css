@@ -952,7 +952,19 @@ input[type="radio"], input[type="checkbox"] {
 	}
 
 	/* ---------- INQUIRY FORM ---------- */
-		
+	
+	.inquiry-wrapper.container {
+		width: 75%;
+		margin-right: 25px !important;
+	}
+	
+	#fp-nav.left {
+		left: 6%;
+	}
+	
+	.form-field {
+		padding: 0;}
+
 	ul.inquiry-sidenav {
 		left: 45px;
 		bottom: 3%;
