@@ -16,12 +16,13 @@ $(document).ready(function () {
 		  slidesToShow: 5,
 		  slidesToScroll: 1,
 		  autoplay: true,
-		  speed: 12000,
+		  speed: 20000,
 		  autoplaySpeed: 0,
 		  swipe: true,
 		  dots: true,
 		  infinite: true,
-		  cssEase: 'ease-in-out',	  
+		  cssEase: 'linear',
+		  stopOnHover: true,	  
 		  responsive: [
 			{
 			  breakpoint: 1024,
@@ -34,6 +35,18 @@ $(document).ready(function () {
 				swipe: true,
 			  }
 			},
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				speed: 12000,
+				dots: true,
+				swipe: true,
+				arrows: false
+			  }
+			},			
 			{
 			  breakpoint: 600,
 			  settings: {
@@ -93,7 +106,7 @@ $(document).ready(function () {
 		{
 		boxClass:     'wow',       
 		animateClass: 'animated',  
-		offset:       100,           
+		offset:       500,           
 		mobile:       true,     
 		live:         true        
 		}
