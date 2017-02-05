@@ -106,7 +106,7 @@ $(document).ready(function () {
 		{
 		boxClass:     'wow',       
 		animateClass: 'animated',  
-		offset:       900,           
+		offset:       300,           
 		mobile:       true,     
 		live:         true        
 		}
@@ -118,7 +118,7 @@ $(document).ready(function () {
 		{
 		boxClass:     'wow',       
 		animateClass: 'animated',  
-		offset:       100,           
+		offset:       0,           
 		mobile:       true,     
 		live:         true        
 		}

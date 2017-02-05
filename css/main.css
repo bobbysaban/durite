@@ -4,8 +4,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li, label, textarea {
 	font-family: 'Catamaran', Helvetica, sans serif;
 }
 h1, label, ul {
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 38px;
     font-weight: 300;
     color: rgba(74, 74, 74, 1);
 	}
@@ -196,7 +196,7 @@ body {
 	padding: 0;}
 
 section {
-	padding: 7vh 0 !important;}
+	padding: 8vh 0 !important;}
 
 	
 .alt-bg {
@@ -219,7 +219,7 @@ section:last-child {
 }
 
 .intro {
-	margin: 30vh 0 12vh;}
+	margin: 16vh 0 0vh;}
 
 .intro div:first-child {
     float: left;
@@ -235,7 +235,7 @@ section:last-child {
 	margin: 10em 0 3em;}
 	
 .line-separator {
-	background: #f6f6f6;
+	background: #d7d7d7;
     width: 100%;
     height: 1px;}
 
@@ -261,8 +261,10 @@ section .copy {
 .desktop {
 	display: block;}
 
-#intro .wow {
-	animation-duration: 4s;}
+#intro .wow, .wow2 {
+	animation-duration: 6s;
+	}
+
 
 /* ---------- nav ---------- */
 
@@ -417,11 +419,11 @@ ul.nav hr {
 .product-slider h3 {
 	text-transform: capitalize;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30vh;
     color: white;
     
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.35);
 	-webkit-transition: background 0.75s linear;
 	-moz-transition: background 0.75s linear;
 	-ms-transition: background 0.75s linear;
