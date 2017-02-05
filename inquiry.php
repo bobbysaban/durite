@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title> Durite </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">	
+	<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<style>
+
+form {
+    line-height: 2em;
+}
+p {
+    margin: 5px 0;
+}
+h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold
+}
+#result {
+    margin: 10px;
+    background: #eee;
+    padding: 10px;
+    height: 40px;
+    overflow: auto;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div class="nav-container" style="padding:0;">
+	<div class="logo" style="padding:0;">
+		<a href="index.html"><img src="assets/logo.png" width="30" /></a>
+	</div>   
+</div>
+
+<!-- HAMBURGER -->	
+<button class="hamburger hamburger--squeeze" type="button">
+	<span class="hamburger-box">
+		<span class="hamburger-inner"></span>
+	</span>
+</button>
+
+<!-- HAMBURGER NAV -->
+<div class="hamburger-nav col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+ 	<div class="main-nav vertAlign">
+ 		<h1 class="wow fadeInRight animated"> <a href="index.html"> Home </a> </h1>
+		<ul class="wow2 fadeInRight animated"> <a href="index.html#products"> Products </a> </h1>		
+			<li> <a href="product.html"> Kitchen & Bar Countertops </a> </li>
+			<li> <a href="product.html"> Bathtub & Fixtures </a> </li>
+			<li> <a href="product.html"> Precast & Water Jet </a> </li>
+			<li> <a href="product.html"> Shower Pans & Basins </a> </li>
+			<li> <a href="product.html"> Vanity Tops </a> </li>
+			<li> <a href="product.html"> Wall & Wainscot </a> </li>			
+			<li> <a href="product.html"> Furniture  </a> </li>
+		</ul>
+		
+		<h1 class="wow2 fadeInRight animated"> <a href="index.html#process"> Process </a> </h1>			
+		<h1 class="wow2 fadeInRight animated"> <a href="index.html#portfolio"> Portfolio </a> </h1>
+		<h1 class="wow2 fadeInRight animated cta"> <a href="inquiry.html"> Get A Quote </a> </h1>
+	</div>
+</div>
+<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 overlay"></div>
+
+
+
+<div class="inquiry-wrapper container col-lg-9 col-md-12 col-sm-12 col-xs-12">
+ 	
+ 	<?php
+		require 'PHPMailerAutoload.php';
+
+		$mail = new PHPMailer;
+
+		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+		$mail->isSMTP();                                      // Set mailer to use SMTP
+		$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+		$mail->SMTPAuth = true;                               // Enable SMTP authentication
+		$mail->Username = 'user@example.com';                 // SMTP username
+		$mail->Password = 'secret';                           // SMTP password
+		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+		$mail->Port = 587;                                    // TCP port to connect to
+
+		$mail->setFrom('from@example.com', 'Mailer');
+		$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+		$mail->addAddress('ellen@example.com');               // Name is optional
+		$mail->addReplyTo('info@example.com', 'Information');
+		$mail->addCC('cc@example.com');
+		$mail->addBCC('bcc@example.com');
+
+		$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+		$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+		$mail->isHTML(true);                                  // Set email format to HTML
+
+		$mail->Subject = 'Here is the subject';
+		$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+		if(!$mail->send()) {
+			echo 'Message could not be sent.';
+			echo 'Mailer Error: ' . $mail->ErrorInfo;
+		} else {
+			echo 'Message has been sent';
+		}
+	?>
+
+	<form id="fullpage" action="" method="post">
+
+		<div class="section col-lg-8 col-md-8 col-sm-8 col-xs-12 wow fadeIn" id="section0">
+			<h1>
+				Please fill out the following 12 questions  to the best of your ability, and 
+				we will get back to you shortly.
+			</h1>
+			<div  class="cta btn" data-menuanchor="second-question"><a href="#section1">Start</a></div>
+
+			
+		</div>
+ 	
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section1">
+			<div>
+				<label for="materials-considered?">1. What material are you considering? </label><br>
+				<h3> Select all that apply </h3>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" style="padding-left:0; padding-top: 25px;">
+					<input type="radio" name="material-natural" value="material-natural"> <h4> Natural </h4> <br>
+					<input type="radio" name="material-manmade" value="material-manmade"> <h4> Manmade </h4><br>
+					<input type="radio" name="material-made-to-order" value="material-made-to-order" > <h4> Made to Order </h4><br>
+				</div>
+			</div>
+		</div>
+  
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section2">
+			<div>
+				<label for="desired-material?">2. Tell us about your desired material: </label><br>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding-left:0; padding-top: 25px;">
+					<input type="radio" name="terrazzo" value="Countertop"> <h4> Terrazzo </h4> <br>
+					<input type="radio" name="quartz" value="Vanity Top"> <h4> Quartz </h4><br>
+					<input type="radio" name="bathroom-fixtures" value="Bathroom Fixtures" > <h4> Concrete </h4><br>
+				</div>			
+				
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="padding-left:0; padding-top: 25px;">
+					<input type="radio" name="durite-provides" value="durite-provides"> <h4> Durite to Provide </h4> <br>
+					<input type="radio" name="customer-provides" value="customer-provides"> <h4> I Will Provide </h4><br>
+					<input type="radio" name="sample-prior-to-cost" value="sample-prior-to-cost" > <h4> Please send a sample prior to cost </h4><br>
+				</div>		
+			</div>
+		</div>
+			
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section3">
+			<div>
+				<label for="budget-for-creating-materials">3. What is your budget if you want us to create your desired material?</label><br>
+				<select name="budget">
+					<option value="option-1">0 - $1,000</option>
+					<option value="option-2">$1,000 - $2,000</option>
+					<option value="option-3">3,000 - $4,000</option>
+					<option value="option-4">$5,000 - $6,000</option>
+				</select>
+			</div>
+		</div>
+	
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section4">
+			<div>
+				<label for="size-variations">4. Design Selection</label><br>
+				<h3> Limit your upload to one design at a time </h3>
+				<br>
+				<div class="col-lg-3 col-md-3 upload-wrapper" style="margin: 2% 2% 0 0;">
+					<input type="file" name="design-selection" accept="image/*">
+					<input type="submit">
+				</div>
+				
+				<div class="col-lg-3 col-md-3 upload-wrapper">			
+					<h2 for="plan-view">Upload Plan View</h2>
+					<input type="file" name="plan-view" accept="image/*">
+					<input type="submit">
+				</div>
+
+				<div class="col-lg-3 col-md-3 upload-wrapper">
+					<h2 for="selection-view">Upload Selection</h2>
+					<input type="file" name="selection-view" accept="image/*">
+					<input type="submit">
+				</div>
+				
+			</div>
+		</div>
+	
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section5">
+			<div>
+				<label for="prototype">5. How many pieces are required from this design?</label><br>
+				<select name="how-many-required-pieces">
+					<option value="option-1">1</option>
+					<option value="option-2">2</option>
+					<option value="option-3">3</option>
+					<option value="option-4">4</option>
+					<option value="option-5">5</option>
+					<option value="option-6">6</option>
+					<option value="option-7">7</option>
+					<option value="option-8">8</option>
+					<option value="option-9">9</option>
+					<option value="option-10">10+</option>					
+				</select>  
+			</div>
+		</div>
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section6">
+			<div>
+				<label for="project-timeline">6. What is your leadtime from fabrication to on-site delivery?</label><br>
+				<input name="timeline" id="timeline" type="date" value="2011-01-13"/>
+				<input name="timeline" id="timeline" type="date" value="2011-01-13"/>
+			</div>
+		</div>
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section7">
+			<div>
+				<label for="shipping">7. Do you require all to be shipped at once, or separate, as products are fabricated?</label><br>
+				<input type="radio" name="all-at-once" value="yes"> <h4> All at once </h4><br>
+				<input type="radio" name="as-production-advances" value="no"> <h4> As production advances</h4><br>  
+			</div>
+		</div>
+	
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section8">
+			<div>
+				<label for="shipping-preference">8. How do you want shipping?</label><br>
+				<h4> Crating must be included. </h4>
+				<input type="text" name="shipping" value="Type Here" class="col-lg-6 col-md-6 col-sm-10 col-xs-12" style="margin-top: 20px;">
+
+			</div>
+		</div>
+  
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section9">
+			<div>
+				<label for="insurance">9. Are you taking insurance on this production & shipment? </label><br>
+				<input type="radio" name="insurance-yes" value="yes"><h4>Yes</h4> <br>
+				<input type="radio" name="insurance-no" value="no"> <h4>No</h4><br>  
+			</div>
+		</div>
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section10">
+			<div>
+				<label for="prototype">10. Do you require a prototype prior to mass production?</label><br>
+				<input type="radio" name="prototype-yes" value="yes"> <h4>Yes</h4> <br>
+				<input type="radio" name="prototype-no" value="no"> <h4>No </h4><br>    
+			</div>
+		</div>	
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section11">
+			<div>
+				<label for="crating">11. Tell us how you want to crate your product. 
+				How many pieces per crate?
+				How much weight per crate? size of crate (if available)?
+				If forklifted, should it be a front-load, or lifted from the middle?  </label>
+				<br>
+				<textarea type="text" name="crating" value="Type Here" class="col-lg-10 col-md-10 col-sm-10 col-xs-12"></textarea>
+
+			</div>
+		</div>
+
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section12">
+			<div>
+				<label for="shipping">12. How would you like it shipped? Do you have a 
+				freight carrier, or would you like us to provide one?</label><br>
+				<input type="radio" name="customer-has-freight carrier" value="customer-has-freight carrier"> <h4>I have a freight carrier </h4><br>
+				<input type="radio" name="customer-needs-freight carrier" value="customer-needs-freight carrier"> <h4>I need a freight carrier </h4><br>    
+			</div>
+		</div>
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section13">
+			<div>
+				<label for="shipping">13. Where will this product be shipped to?</label><br>
+				<input type="text" name="shipping-addredd" value="Type your Address" class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+			</div>
+		</div> 
+		
+		<div class="form-field section col-lg-12 col-md-12 col-sm-12 col-xs-12 wow FadeIn" id="section14">
+			<div>
+				<label for="payment">14.How will you pay for this project?</label><br>
+				<input type="radio" name="payment-deposit" value="payment-deposit"> <h4>Deposit </h4><br>
+				<input type="radio" name="payment-payment-progress" value="payment-payment-progress"><h4>Payment Progress </h4><br>  
+				<input type="radio" name="payment-fob" value="payment-fob"> <h4>FOB </h4><br>
+				<input type="radio" name="payment-fob" value="payment-other"> <h4>Other </h4> <br>
+				<h4> If other, please detail below </h4>
+				<input type="text" name="other-payment" value="Other payment type">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12" style="padding:0;">
+				<p><input class="cta submit col-lg-4 col-md-4 col-sm-6 col-xs-12" type="submit" style="padding:0;" /></p>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0;">
+					<h2 style="margin-right: 20px; float: left;">JSON</h2><pre id="result"></pre>
+				</div>
+			</div>
+		</div> 
+
+
+				
+	</form>
+	
+
+ 
+</div>   
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/inquiry.js"></script>	
+
+	<script>
+	
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				//Navigation
+				menu: '#menu',
+            	anchors: ['first-question', 'second-question', 'third-question', 'fourth-question', 'fifth-question'],
+				navigation: true,
+				navigationPosition: 'left',
+
+
+			});
+		});
+			
+	</script>	
+
+</body>
+</html>
