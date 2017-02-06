@@ -15,7 +15,7 @@ h2 {
 	font-weight: 300;
 	color: rgba(0, 0, 0, .5);
 	}
-	
+
 h3, li {
     font-weight: 300;
     color: #4A4A4A;
@@ -23,7 +23,7 @@ h3, li {
     letter-spacing: .5px;
     font-size: 14px;
 	}
-		
+
 h4 {
 	font-family: 'Helvetica';
 	font-size: 16px;
@@ -39,7 +39,7 @@ h5 {
 	font-weight: 300;
 	color: rgba(0, 0, 0, .5);
 	}
-	
+
 p {
 	font-family: 'Helvetica';
 	font-size: 14px;
@@ -91,7 +91,7 @@ input[type="submit"] {
 	padding: 5px 10px;}
 
 .copy h1 {}
-	
+
 .copy p {
     font-size: 20px;
     line-height: 30px;
@@ -122,7 +122,7 @@ a:hover {
 	-ms-transition: opacity 0.25s linear;
 	-o-transition: opacity 0.25s linear;
 	transition: opacity 0.25s linear;}
- 
+
 .cta a, a.cta {
 	color: #f8884d !important;
     font-weight: 500 !important;
@@ -158,7 +158,7 @@ a:hover {
 .btn a {
 	opacity: 1;
 }
-	
+
 .quote.btn {
     outline: none;
     position: fixed;
@@ -188,10 +188,10 @@ a:hover {
     color: white;
     text-decoration: none;
 }
-    
+
 .nav > li > a:hover, .nav > li > a:focus {
 	background: none !important;}
-    
+
 /*---------- LAYOUT ---------- */
 
 body {
@@ -203,10 +203,10 @@ section {
 
 body .grid:first-child {
 	padding: 100px 100px 0px 200px;}
-	
+
 .alt-bg {
 	background-color: #f6f6f6;}
-	
+
 section:last-child {
 	background: white;}
 
@@ -227,7 +227,7 @@ section:last-child {
 .intro div:first-child {
 	float: none;
 	margin: auto;}
-	
+
 
 .intro .vertAlign{
 	margin: auto;
@@ -237,7 +237,7 @@ section:last-child {
 .inquiry-wrapper .intro {
 	padding-top: 200px;
 	margin-bottom: 20vh;}
-	
+
 section .copy {
 	padding-left: 50px;}
 
@@ -251,10 +251,13 @@ section .copy {
 	height: 475px;
 	background-color: #d6d6d6;
 	float: right;
-	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/temp-hero.jpg');
 	background-size: cover;
     background-repeat: no-repeat;
 	}
+
+.hero .about {
+  background-image: url('http://www.newyorker.com/wp-content/uploads/2015/12/Veix-Goodbye-New-York-Color-1200.jpg');
+}
 
 .mobile-nav, .mobile {
 	display: none;}
@@ -270,12 +273,12 @@ section .copy {
 	z-index: 97;}
 
 .logo {
-	margin: 30px;}	
-	
+	margin: 30px;}
+
 .logo a img {
 	float: left;
 	margin-right: 35px;}
-	
+
 ul.nav, ul.inquiry-sidenav {
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -295,14 +298,14 @@ ul.nav, ul.inquiry-sidenav {
 }
 
 ul.nav li {
-    
+
     -webkit-writing-mode: vertical-lr;
 	-ms-writing-mode: tb-rl;
 	writing-mode: vertical-lr
-    
+
     font-size: 14px;
     line-height: 14px;}
-	
+
 ul.nav hr {
 	margin: 10px 12.5px;
     width: 50px;}
@@ -328,7 +331,7 @@ ul.nav hr {
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
     width: 25px;
     height: 1px;}
-    
+
 
 .hamburger-inner:after {
     bottom: -8px;
@@ -350,7 +353,7 @@ ul.nav hr {
     padding: 0 80px;
 }
 
-.hamburger-nav h1, .hamburger-nav ul { 
+.hamburger-nav h1, .hamburger-nav ul {
 	font-weight: 500;
     font-size: 20px;
     line-height: 40px;
@@ -362,24 +365,24 @@ ul.nav hr {
     padding-left: 0;
     }
 
-    
+
 .hamburger-nav ul {
 	margin: 24px 0;
-	} 
+	}
 
 .hamburger-nav li {
 	line-height: 26px;
-	} 
+	}
 
 .hamburger-nav li a {
 	color: #9B9B9B;}
-		
+
 .hamburger-nav a {
 	color: rgba(74, 74, 74, 1);}
 
 .hamburger-nav .cta a {
 	font-weight: 600 !important;}
-	
+
 .main-nav {
 	position: fixed;}
 .overlay {
@@ -395,13 +398,13 @@ ul.nav hr {
 .product{
 	padding: 10px;
 	outline: none;}
-	
+
 .product-slide {
 	margin-right: 25px;
 	float: left;
 	padding: 0;
 	}
-	
+
 .product-slider .bg-slide  {
     background-size: cover;
     background-repeat: no-repeat;
@@ -414,7 +417,7 @@ ul.nav hr {
     text-align: center;
     line-height: 20px;
     margin-top: 16px;}
-    
+
 .product-slider .slide-1 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/basin.jpg')}
 .product-slider .slide-2 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg')}
 .product-slider .slide-3 {background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/vanity.jpg')}
@@ -434,7 +437,7 @@ ul.inquiry-nav {
     position: fixed;
     list-style-type: none;
     left: 35px;
-    padding: 0;}	
+    padding: 0;}
 
 .dot {
 	width: 10px;
@@ -443,7 +446,7 @@ ul.inquiry-nav {
 	background-color: #d7d7d7;
 	margin: 18px 0;
 	display: block;
-}	
+}
 
 .active-dot, .dot:active  {
 	background-color: #F66012 !important;
@@ -460,7 +463,7 @@ form {
 
 input, textarea {
 	padding: 10px;}
-	
+
 input[type="radio"], input[type="checkbox"] {
     margin: 0px 6px -1px;
     box-shadow: none;
@@ -469,14 +472,14 @@ input[type="radio"], input[type="checkbox"] {
     border-radius: 15px;
     border: 2px solid #d6d6d6;
     box-shadow: none;
-    
+
     position: relative;
     box-sizing: border-box;
     padding: 5px;
     float: left;
 }
 
-.form-field {  
+.form-field {
     display: block;
     position: relative;
     width: 100%;
@@ -488,7 +491,7 @@ input[type="radio"], input[type="checkbox"] {
 	border: 1px solid #d6d6d6;
     height: 25vh;
     margin: 2%;}
-    
+
 .form-field h2 {
 	margin-bottom: 0px;}
 
@@ -501,7 +504,7 @@ input[type="radio"], input[type="checkbox"] {
     background: #f66012;
     color: white;
     font-weight: 500;}
-    
+
 /* ---------- PROCESS ---------- */
 
 .process {
@@ -511,7 +514,7 @@ input[type="radio"], input[type="checkbox"] {
 #process div {
 	margin: 50px auto;
 }
-		
+
 .process-slide {
 	height: 50vh;}
 
@@ -520,14 +523,14 @@ input[type="radio"], input[type="checkbox"] {
 
 #process .process-slider div {
 	margin: 0;}
-	
+
 #process .vertAlign {
     padding: 0 0px 0 100px !important;
 }
 
 #process .leftAlign {
     padding: 0 100px 0 50px !important;
-}	
+}
 #process .copy {
 	padding-left: 100px;}
 
@@ -538,7 +541,7 @@ input[type="radio"], input[type="checkbox"] {
 	height: 50vh;
 	background-color: #d6d6d6;
 	}
-	
+
 
 /* ---------- PROJECTS ---------- */
 
@@ -555,30 +558,30 @@ input[type="radio"], input[type="checkbox"] {
 .brands div {
 	margin: 100px auto;
 }
-	
+
 
 /* ---------- PRODUCT PAGE ---------- */
 #product-page {
 	margin-bottom: 100px;}
-	
+
 
 #product-page .intro{
     padding-top: 20vh !important;}
 
 .info-wrap .info {
     min-height: 200px;}
-          
+
 .info-wrap .info {
     padding-right:60px;}
-  
-#product-page .hero {
-	background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');
-	}
 
-#product-page h1 {	
+#product-page .hero {
+	/*background-image: url('https://raw.githubusercontent.com/bobsaban/durite/master/img/products/counter.jpg');*/
+}
+
+#product-page h1 {
 	margin-bottom: 30px !important;
 	}
-	
+
 #product-page p {
     font-size: 14px;
     line-height: 22px;
@@ -588,26 +591,26 @@ input[type="radio"], input[type="checkbox"] {
 #products-page h3 {
 	padding-left: 10px;
     margin-bottom: 50px;}
-   
+
 /* ---------- PRODUCT PAGE NEW ---------- */
- 
+
 
 #product-page section {
 	margin: 0;}
-	
+
 #product-page .grid:nth-child(even) {
 	padding: 100px 150px 25px 150px;}
 
 #product-page .grid:nth-child(odd) {
 	padding: 0px 150px 100px 150px;}
-	
+
 .intro-copy {
-	padding-top: 0px;} 
+	padding-top: 0px;}
 
 #product-page #intro {
 	height: 95vh;
 	padding: 0 100px !important;
-	
+
 	}
 
 .intro-copy .copy {
@@ -625,7 +628,7 @@ input[type="radio"], input[type="checkbox"] {
 
 #product-page .hero {
 	height: 300px;}
-   
+
 
 /* ---------- RELATED PRODUCTS ---------- */
 
@@ -642,16 +645,16 @@ input[type="radio"], input[type="checkbox"] {
 	text-align: center;}
 /* ---------- 950px ---------- */
 
-@media only screen and (max-width: 950px){ 
-	
+@media only screen and (max-width: 950px){
+
 	.product .bg-slide {
 		height: 25vh;}
-	
+
 	.info-wrap .info {
 		min-height: initial;
 		padding: 0;
 	}
-		
+
 	.vertAlign, ul.inquiry-sidenav, #intro .vertAlign {
 		top: initial;
 		transform: initial;
@@ -659,7 +662,7 @@ input[type="radio"], input[type="checkbox"] {
 		-webkit-transform: initial;
 		padding:0;
 		}
-	
+
 	.hamburger-nav .vertAlign, #product-page .vertAlign {
 		transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
@@ -667,10 +670,10 @@ input[type="radio"], input[type="checkbox"] {
 		top: 50%;
 		position: relative;
 		}
-	
+
 	.process {
 		height: initial !important;}
-	
+
 	#process .vertAlign {
 		padding-left: 50px !important;
 	}
@@ -678,15 +681,15 @@ input[type="radio"], input[type="checkbox"] {
 	.process .bg-slide {
 		height: 30vh;
 		}
-		
+
 	.leftAlign {
 		padding-left: 0 !important;}
-	
+
 	#process .slick-dots {
 		bottom: 0;
 		left: 0;
 	}
-	
+
 	#process .slick-prev, #process .slick-next {
 		bottom: 50px;
 		display: none !important;
@@ -694,28 +697,28 @@ input[type="radio"], input[type="checkbox"] {
 
 	/* ---------- PRODUCTS ---------- */
 
-	
-}	
 
-/* ---------- IPHONE ---------- */	
-@media only screen and (max-width: 768px){ 
+}
+
+/* ---------- IPHONE ---------- */
+@media only screen and (max-width: 768px){
 
 	/* ---------- GENERAL ---------- */
 
 	.desktop {
 		display: none;}
-	
+
 	.mobile {
 		display: block;}
-		
+
 	section {
 		width: 85% !important;
 		margin: auto 7.5%;}
-		
+
 	#product-page section {
 		width: 100% !important;
 		margin: auto;}
-		
+
 	.container {
 		padding: 0 0px;
 		width: 100%;
@@ -725,7 +728,7 @@ input[type="radio"], input[type="checkbox"] {
 
 	section .copy {
 		padding: 0;}
-		
+
 	.hamburger-nav .vertAlign {
 		transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
@@ -744,7 +747,7 @@ input[type="radio"], input[type="checkbox"] {
 	.logo, .hamburger {
 		top: 0;
     	margin: 16.5px 25px;}
-    
+
     .logo a img {
 		float: left;
 		margin-right: 35px;
@@ -758,13 +761,13 @@ input[type="radio"], input[type="checkbox"] {
 		padding: 0;
 		margin: 0;
 		z-index:99;}
-	
+
 	.nav-container {
 		height: 70px;
 		border: none;
 		width: 100%;
 	}
-	
+
 	.intro {
 		padding: 0;
 		margin: 20vh auto 10vh;
@@ -774,12 +777,12 @@ input[type="radio"], input[type="checkbox"] {
 	 #process div {
 		margin: 25px auto 0;
 	}
-	
+
 	.process div {
 		margin: 0 auto;}
 
 	/* ---------- HAMBURGER NAV ---------- */
-		
+
 	.hamburger {
 		top: 0;
 		left: inherit;
@@ -790,11 +793,11 @@ input[type="radio"], input[type="checkbox"] {
 	.hamburger-nav {
 		padding: 0 50px;
 	}
-	
+
 	.hamburger-nav h1, .hamburger-nav ul {
 		text-align: left;
 	}
-	
+
 	/* ---------- PRODUCT SLIDER ---------- */
 
 	section#products {
@@ -802,14 +805,14 @@ input[type="radio"], input[type="checkbox"] {
     	margin: 0 auto 50px;
     	background: #f6f6f6;
    		padding: 50px 0 75px !important;}
-   	
+
    	section#products > div:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	.product-slider {
-		padding: 0;}	
-				
+		padding: 0;}
+
 	.slick-dotted.slick-slider {
 		margin-bottom: 0;}
 
@@ -819,22 +822,22 @@ input[type="radio"], input[type="checkbox"] {
 		left: 0;
 		right: 0;
 	}
-	
+
 	/* ---------- PROCESS ---------- */
-		
+
 	#process .copy {
 		padding: 0;}
-	
+
 	#process p, #process .vertAlign {
 		padding: 0;}
-	
+
 	.process-wrapper .bg-slide  {
 		height: 40vh;
 		margin-bottom: 25px;}
 
 	.process-wrapper > div:nth-child(even) {
 		margin-bottom: 50px;}
-				
+
 	#process .vertAlign {
 		padding: 0px !important;}
 
@@ -850,28 +853,28 @@ input[type="radio"], input[type="checkbox"] {
 		}
 	#portfolio div:nth-child(3) {
 		padding:0 0 0 10px;
-		}		
+		}
 	.project {
 		height: 25vh;
 	}
-	
+
 	.brands {
 		margin: 50px 0 0;}
-	
+
 	.brands > div {
 		padding: 7px;}
-	
+
 	section:last-child {
 		margin-bottom: 50px !important;
 		background: white;
 	}
-	
+
 	section > div:last-child {
 		padding: 0;
 	}
 
 	/* ---------- INQUIRY FORM ---------- */
-		
+
 	ul.inquiry-sidenav {
 		left: 45px;
 		bottom: 3%;
@@ -886,16 +889,16 @@ input[type="radio"], input[type="checkbox"] {
 		left: 0;
 		right: 0;
 	}
-	
+
 	ul.inquiry-sidenav li {
 		float: left;
 		margin: 0 5px;}
-	
+
 	.btn {
 		width: 50%;}
 
 	/* ---------- PRODUCT PAGE ---------- */
-		
+
 		#product-page .hero {
 			height: 200px;
 		}
@@ -905,7 +908,7 @@ input[type="radio"], input[type="checkbox"] {
 
 		#product-page #intro div {
 			position: relative;}
-			
+
 		body .grid:first-child {
 			padding: 100px 100px 0px 100px !important;
 		}
@@ -914,11 +917,11 @@ input[type="radio"], input[type="checkbox"] {
 			padding-top: 100px !important;
 			margin-bottom: 0px;
 		}
-		
+
 		#product-page .hero {
 			right: inherit;
 		}
-		
+
 		#product-page .grid  {
 			padding: 30px !important;
 		}
@@ -926,11 +929,11 @@ input[type="radio"], input[type="checkbox"] {
 		#product-page .grid div:last-child, #product-page .info:last-child p  {
 			margin-bottom: 0px !important;
 		}
-		
+
 		#product-page .intro-copy .copy {
 			padding: 0px 0px 50px 0;
 		}
-		
+
 		.quote-btn-wrapper {
 			background-color: #f6f6f6;
 			position: fixed;
@@ -938,7 +941,7 @@ input[type="radio"], input[type="checkbox"] {
 			height: 75px;
 			width: 100%;
 			z-index: 98;}
-		
+
 		.quote.btn {
 			bottom: 17.5px;
 			left: 0;
@@ -946,16 +949,16 @@ input[type="radio"], input[type="checkbox"] {
 			margin: auto;
 			width: 85%;
 			top: inherit;}
-		
+
 		#related-products .bg-slide {
 			height: 15vh;
 			margin-bottom: 10px;
 		}
-		
+
 		.brands div {
 			margin: 10px auto;
 		}
-		
+
 		#intro .vertAlign {
 			top: initial;
 			transform: initial;
@@ -964,13 +967,10 @@ input[type="radio"], input[type="checkbox"] {
 			padding:0;
 		}
 
-/* ---------- IPHONE ---------- */	
-@media only screen and (max-width: 375px){ 
+/* ---------- IPHONE ---------- */
+@media only screen and (max-width: 375px){
 
 	.project {
 		height: 15vh;
 	}
 }
-
-
-
